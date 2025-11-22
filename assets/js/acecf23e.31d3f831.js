@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkcareertags_github_io=globalThis.webpackChunkcareertags_github_io||[]).push([[903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Blog","authorsListPath":"/blog/authors"}')}}]);
