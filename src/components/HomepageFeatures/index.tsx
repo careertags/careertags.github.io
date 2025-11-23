@@ -15,8 +15,8 @@ const FeatureList: FeatureItem[] = [
     Png: require("@site/static/img/save-icon.png").default,
     description: (
       <>
-        支援 104、1111、Yourator、CakeResume、LinkedIn、Indeed
-        等平台看到心儀職缺，一鍵收藏並支援匯出功能，不用再手動複製貼上到 Excel
+        免登入求職平台，一鍵收藏跨平台職缺（104、1111、Yourator、Cake、LinkedIn、Indeed
+        等平台）並支援匯出功能 ，不用再手動複製貼上到 Excel/Notion
       </>
     ),
   },
