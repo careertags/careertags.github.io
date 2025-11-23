@@ -31,7 +31,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: "你的職涯技能樹",
+    title: "你的職涯知識庫",
     Png: require("@site/static/img/skill-tree-icon.png").default,
     description: (
       <>

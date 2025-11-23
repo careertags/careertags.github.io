@@ -96,7 +96,7 @@ const config: Config = {
         // { to: "/blog", label: "部落格", position: "left" },
         {
           href: "https://facebook.com/groups/careertags",
-          label: "加入職涯成長社群",
+          label: "加入職涯成長交流社群",
           position: "right",
         },
       ],
@@ -130,8 +130,8 @@ const config: Config = {
           title: "More",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
+              label: "Contact Us",
+              to: "mailto:careertags.com@gmail.com",
             },
           ],
         },
