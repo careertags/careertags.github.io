@@ -35,7 +35,7 @@ const FeatureList: FeatureItem[] = [
     Png: require("@site/static/img/skill-tree-icon.png").default,
     description: (
       <>
-        透過 AI 與社群協作，整理各職位從資淺到資深的技能樹與學習資源。
+        透過社群協作，整理各職位從資淺到資深的技能樹與學習資源。
         從工程師、設計師、PM
         到行銷，你能快速核對自己與職缺的差距，知道該補強什麼技能
       </>

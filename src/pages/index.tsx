@@ -35,7 +35,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="CareerTags 職涯書籤，幫助你一鍵收藏職缺，系統管理投遞，打造屬於你的職涯技能樹"
+      description="一鍵收藏跨平台職缺，系統化管理你的求職進度"
     >
       <HomepageHeader />
       <main>
