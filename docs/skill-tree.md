@@ -2,4 +2,4 @@
 sidebar_position: 1
 ---
 
-# 職缺技能樹
+# 職涯技能樹

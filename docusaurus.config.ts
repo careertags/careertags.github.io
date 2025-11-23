@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "CareerTags 職涯書籤",
-  tagline: "一鍵收藏職缺，系統管理投遞，打造屬於你的職涯技能樹",
+  tagline: "一鍵收藏跨平台職缺，系統管理投遞，打造屬於你的職涯技能樹",
   favicon: "img/logo.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -19,10 +19,11 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
-
+  trailingSlash: false,
+  deploymentBranch: "gh-pages",
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "CareerTags", // Usually your GitHub org/user name.
+  organizationName: "careertags", // Usually your GitHub org/user name.
   projectName: "careertags.github.io", // 你的 repo 名稱
 
   onBrokenLinks: "throw",
@@ -90,7 +91,7 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "職缺技能樹",
+          label: "職涯技能樹",
         },
         // { to: "/blog", label: "部落格", position: "left" },
         {
@@ -107,7 +108,7 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "職缺技能樹",
+              label: "職涯技能樹",
               to: "/docs/skill-tree",
             },
           ],
