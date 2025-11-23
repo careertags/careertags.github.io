@@ -15,8 +15,8 @@ const FeatureList: FeatureItem[] = [
     Png: require("@site/static/img/save-icon.png").default,
     description: (
       <>
-        支援 104、1111、Yourator、CakeResume、LinkedIn、Indeed 等平台
-        看到心儀職缺，一鍵收藏並支援匯出功能，不用再手動複製貼上到 Excel
+        支援 104、1111、Yourator、CakeResume、LinkedIn、Indeed
+        等平台看到心儀職缺，一鍵收藏並支援匯出功能，不用再手動複製貼上到 Excel
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         已收藏 → 已投遞 → 已讀取 → 面試中 → Offer /
-        無聲卡，清楚追蹤每個職缺的進度。為每個機會加入註記：面試心得、公司觀察、薪資談判等
+        無聲卡，視覺化看板清楚追蹤每個職缺的進度。為每個機會加入註記：面試心得、公司觀察、薪資談判等
       </>
     ),
   },

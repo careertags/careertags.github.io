@@ -22,7 +22,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/skill-tree"
           >
-            免費下載 CareerTags 🚀
+            免費下載 CareerTags
           </Link>
         </div>
       </div>

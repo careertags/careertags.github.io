@@ -96,7 +96,7 @@ const config: Config = {
         // { to: "/blog", label: "部落格", position: "left" },
         {
           href: "https://facebook.com/groups/careertags",
-          label: "FB 社群",
+          label: "加入職涯成長社群",
           position: "right",
         },
       ],
