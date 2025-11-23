@@ -38,8 +38,15 @@ const config: Config = {
 
   presets: [
     [
-      "classic",
+      "@docusaurus/preset-classic",
       {
+        googleTagManager: {
+          containerId: "GTM-NM3JS43H", // 替換成你的 GTM 容器 ID
+        },
+        gtag: {
+          trackingID: "G-8HR5NM6PBK",
+          anonymizeIP: true,
+        },
         docs: {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
