@@ -126,7 +126,7 @@ const config: Config = {
           ],
         },
         {
-          title: "Docs",
+          title: "Resources",
           items: [
             {
               label: "推薦學習資源",
