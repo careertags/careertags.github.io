@@ -103,7 +103,7 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "resourceSidebar",
           position: "left",
-          label: "學習資源",
+          label: "推薦學習資源",
         },
         // { to: "/blog", label: "部落格", position: "left" },
         {
@@ -121,7 +121,16 @@ const config: Config = {
           items: [
             {
               label: "職涯技能樹",
-              to: "/docs/skill-tree",
+              to: "/docs/skill-trees",
+            },
+          ],
+        },
+        {
+          title: "Docs",
+          items: [
+            {
+              label: "推薦學習資源",
+              to: "/docs/resources",
             },
           ],
         },
