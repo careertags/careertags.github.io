@@ -123,11 +123,6 @@ const config: Config = {
               label: "職涯技能樹",
               to: "/docs/skill-trees",
             },
-          ],
-        },
-        {
-          title: "Resources",
-          items: [
             {
               label: "推薦學習資源",
               to: "/docs/resources",
