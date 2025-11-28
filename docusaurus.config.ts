@@ -99,6 +99,12 @@ const config: Config = {
           position: "left",
           label: "職涯技能樹",
         },
+        {
+          type: "docSidebar",
+          sidebarId: "resourceSidebar",
+          position: "left",
+          label: "學習資源",
+        },
         // { to: "/blog", label: "部落格", position: "left" },
         {
           href: "https://facebook.com/groups/careertags",
