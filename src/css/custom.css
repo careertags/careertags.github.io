@@ -73,23 +73,6 @@
 }
 
 /* Navbar */
-.navbar {
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 188, 212, 0.1);
-}
-
-.navbar__title {
-  color: #000000 !important;
-  font-weight: 700;
-}
-
-.navbar__link {
-  color: #000000 !important;
-}
-
-.navbar__link:hover {
-  color: #00acc1 !important;
-}
 
 /* Footer */
 .footer {

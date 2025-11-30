@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "CareerTags 職涯書籤",
-  tagline: "一鍵收藏跨平台職缺，系統化管理你的求職進度",
+  tagline: "一鍵收藏跨平台職缺和學習資源，系統化管理你的求職進度及職涯成長",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -83,7 +83,7 @@ const config: Config = {
     // },
     colorMode: {
       defaultMode: "light",
-      disableSwitch: true,
+      disableSwitch: false,
       respectPrefersColorScheme: false,
     },
     navbar: {

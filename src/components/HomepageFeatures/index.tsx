@@ -35,9 +35,8 @@ const FeatureList: FeatureItem[] = [
     Png: require("@site/static/img/skill-tree-icon.png").default,
     description: (
       <>
-        透過社群協作，整理各職位從資淺到資深的技能樹與學習資源。
-        從工程師、設計師、PM
-        到行銷，你能快速核對自己與職缺的差距，知道該補強什麼技能
+        一鍵收藏書籍、課程、影音等連結，有系統記錄自己的成長，同時透過社群協作相互分享推薦學習資源。
+        支援匯入推薦學習資源，打造你的專屬職涯知識庫
       </>
     ),
   },

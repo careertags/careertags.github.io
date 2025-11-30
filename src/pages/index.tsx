@@ -35,7 +35,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="一鍵收藏跨平台職缺，系統化管理你的求職進度"
+      description="一鍵收藏跨平台職缺和學習資源，系統化管理你的求職進度及職涯成長"
     >
       <HomepageHeader />
       <main>

@@ -1,3 +1,15 @@
+careertags:
+  name: CareerTags
+  title: CareerTags Master
+  url: https://www.careertags.com
+  image_url: https://github.com/careertags.png
+  page: true
+    # customize the url of the author page at /blog/authors/<permalink>
+  socials:
+    github: careertags
+    instagram: careertags
+    website: https://www.careertags.com
+
 kdchang:
   name: KD Chang
   title: CareerTags Founder
