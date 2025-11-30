@@ -35,7 +35,7 @@ const FeatureList: FeatureItem[] = [
     Png: require("@site/static/img/skill-tree-icon.png").default,
     description: (
       <>
-        一鍵收藏書籍、課程、影音等連結，有系統記錄自己的成長，同時透過社群協作相互分享推薦學習資源。
+        一鍵收藏書籍、課程、影音等連結，有系統記錄自己的成長，同時透過社群協作匯出分享推薦學習資源。
         支援匯入推薦學習資源，打造你的專屬職涯知識庫
       </>
     ),
