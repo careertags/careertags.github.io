@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>CareerTags 職涯書籤 Blog</title>
+        <link>https://www.careertags.com/blog</link>
+        <description>CareerTags 職涯書籤 Blog</description>
+        <lastBuildDate>Tue, 02 Dec 2025 10:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>zh-Hant</language>
+        <item>
+            <title><![CDATA[我們正在錯用人工智慧：如何才能真正用對它｜Sasha Luccioni【TED 演講重點摘要】]]></title>
+            <link>https://www.careertags.com/blog/were-doing-ai-all-wrong-heres-how-to-get-it-right-sasha-luccioni-ted</link>
+            <guid>https://www.careertags.com/blog/were-doing-ai-all-wrong-heres-how-to-get-it-right-sasha-luccioni-ted</guid>
+            <pubDate>Tue, 02 Dec 2025 10:00:00 GMT</pubDate>
+            <description><![CDATA[本影音摘要取材自 Sasha Luccioni 博士的 TED 演講，她挑戰了當前科技界「大即是好」（Bigger is Better）的 AI 發展思維。講者指出，少數大型科技公司正以追求「超級智慧」為名，建造耗費巨量資源和能源的超大型語言模型（LLMs）和資料中心，其行為模式如同「大石油公司」（Big Oil）一樣，對環境和社會造成巨大負面影響。她主張，AI 的未來應轉向「小而強大」的模型，並強調永續性、透明度和問責制的重要性。]]></description>
+            <content:encoded><![CDATA[<iframe width="100%" height="400" src="https://www.youtube.com/embed/Bl-vPf_IAoA?si=kxodAfDBlYIQpOWX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<hr>
+<h1>名言佳句</h1>
+<p>「AI 應是小而強大，回饋地球，而非取走資源。」</p>
+<h1>前言</h1>
+<p>本影音重點摘要取材自 Sasha Luccioni 博士的 TED 演講，她挑戰了當前科技界「大即是好」（Bigger is Better）的 AI 發展思維。講者指出，少數大型科技公司正以追求「超級智慧」為名，建造耗費巨量資源和能源的超大型語言模型（LLMs）和資料中心，其行為模式如同「大石油公司」（Big Oil）一樣，對環境和社會造成巨大負面影響。她主張，AI 的未來應轉向「小而強大」的模型，並強調永續性、透明度和問責制的重要性。</p>
+<h1>重點摘要</h1>
+<ol>
+<li class="">AI 發展的誤區是建立在犧牲人類和地球的基礎上，少數大公司透過巨大的資本建立龐大的 LLMs 和資料中心。</li>
+<li class="">追求「大即是好」的 AI 模型在每次使用時比專用的小模型多消耗高達 30 倍的能源，導致巨大的碳排放。</li>
+<li class="">一場由「小型語言模型」（Small LLMs）驅動的革命正在興起，它們參數規模小得多，使用更少的數據、算力和能源，卻能達到相同的性能水平。</li>
+<li class="">小模型可運行於手機或瀏覽器，提高了 AI 的可及性、數據隱私性與主權，並讓新創公司和學術界能與大公司競爭。</li>
+<li class="">AI 應超越 LLMs，轉向更多元的、對抗氣候變遷有實用價值的工具，這些工具能使用更少能源。</li>
+</ol>
+<h1>應用行動方案</h1>
+<ol>
+<li class="">作為使用者，應利用 AI 能源評分系統等工具，選擇碳足跡較小的 AI 模型。</li>
+<li class="">呼籲 AI 公司公開其模型運行所需的能源消耗和碳排放數據，以便使用者做出具永續考量的選擇。</li>
+<li class="">支持如歐盟 AI 法案等立法，推動建立法律和激勵措施，要求 AI 公司評估並對其環境影響負責。</li>
+<li class="">鼓勵開發和使用針對特定任務設計的 AI 模型，如用於氣候變遷、生態監測或能源預測的工具。</li>
+</ol>
+<h1>問題討論</h1>
+<ol>
+<li class="">你認為推動「大即是好」的 AI 發展模式背後，除了技術追求，還有哪些商業動機？</li>
+<li class="">如何在不犧牲性能的前提下，說服大型科技公司轉向開發對環境更友善的「小型語言模型」？</li>
+<li class="">如果 AI 能源評分機制普及，你會因為碳足跡較高而停止使用某些知名的 AI 工具嗎？</li>
+<li class="">你認為政府應如何立法，強制要求 AI 公司對其資料中心造成的環境污染和健康問題負責？</li>
+<li class="">作為 AI 的使用者，你可以在每天的提示（Prompt）和查詢中，如何「重新塑造 AI 的未來」？</li>
+</ol>
+<h1>總結</h1>
+<p>這場演講呼籲社會停止沉迷於由大型科技公司推銷的、高耗能的「超級智慧」迷思。AI 的未來不應被動接受，而是由開發者、監管者和使用者共同塑造。透過推動小型、高效能的 AI 模型、提升能源使用的透明度，以及建立問責法規，我們可以確保 AI 真正服務於全人類和地球的福祉，而非僅僅是少數營利公司的利益。</p>
+<h1>參考文件</h1>
+<p><a href="http://www.youtube.com/watch?v=Bl-vPf_IAoA" target="_blank" rel="noopener noreferrer" class="">影片連結：We’re Doing AI All Wrong. Here’s How to Get It Right | Sasha Luccioni | TED</a></p>]]></content:encoded>
+            <category>職涯</category>
+            <category>影音</category>
+            <category>AI</category>
+            <category>TED 演講</category>
+        </item>
+        <item>
+            <title><![CDATA[最好的職涯道路從來不是直線｜Sarah Ellis & Helen Tupper【TED 演講重點摘要】]]></title>
+            <link>https://www.careertags.com/blog/sarah-ellis-and-helen-tupper-the-best-career-path-isnt-always-a-straight-line-ted</link>
+            <guid>https://www.careertags.com/blog/sarah-ellis-and-helen-tupper-the-best-career-path-isnt-always-a-straight-line-ted</guid>
+            <pubDate>Sat, 12 Jun 2021 10:00:00 GMT</pubDate>
+            <description><![CDATA[本篇重點摘要主要取材自 Sarah Ellis 與 Helen Tupper 在 TED 上的演講「最好的職涯道路並不總是直線向上」（The best career path isn't always a straight line）。兩位講者透過自身經歷與觀察，挑戰傳統「職涯階梯」（Career Ladder）的線性發展觀念，提出「蜿蜒職涯」（Squiggly Career）的概念。在現今快速變化的世界中，職涯不再是單一、固定的路徑，而是充滿不確定性與可能性的蜿蜒旅程。傳統階梯限制了學習與機會，並已成為過時的概念，尤其在只有 6% 的人仍從事朝九晚五工作的今日，它更無法適應未來的需求。兩位講者鼓勵個人重新定義成功、主動規劃學習，並探索多樣化的職涯可能性，強調在蜿蜒職涯中，每個人都能透過發揮才能找到屬於自己的成功之路。]]></description>
+            <content:encoded><![CDATA[<iframe width="100%" height="400" src="https://www.youtube.com/embed/1ALfKWG2nmw?si=kxodAfDBlYIQpOWX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<hr>
+<h1>名言佳句</h1>
+<blockquote>
+<p>「你的職涯道路，一定要是直線向上的嗎？拋開階梯，踏入蜿蜒（Squiggle）職涯。」</p>
+</blockquote>
+<h1>前言</h1>
+<p>本影音重點摘要主要取材自 Sarah Ellis 與 Helen Tupper 在 TED 上的演講「最好的職涯道路並不總是直線向上」（The best career path isn't always a straight line）。兩位講者透過自身經歷與觀察，挑戰傳統「職涯階梯」（Career Ladder）的線性發展觀念，提出「蜿蜒職涯」（Squiggly Career）的概念。在現今快速變化的世界中，職涯不再是單一、固定的路徑，而是充滿不確定性與可能性的蜿蜒旅程。傳統階梯限制了學習與機會，並已成為過時的概念，尤其在只有 6% 的人仍從事朝九晚五工作的今日，它更無法適應未來的需求。兩位講者鼓勵個人重新定義成功、主動規劃學習，並探索多樣化的職涯可能性，強調在蜿蜒職涯中，每個人都能透過發揮才能找到屬於自己的成功之路。</p>
+<h1>重點摘要</h1>
+<ol>
+<li class="">
+<p>階梯職涯的限制與過時：</p>
+<ul>
+<li class="">傳統職涯階梯的概念源於 1900 年代，強調一致性與控制，但這與現今不斷變化的工作世界已不相符。</li>
+<li class="">階梯限制了個人學習與機會，且若組織不放棄階梯，將可能流失人才。</li>
+<li class="">現代人預計會經歷五種不同類型的工作，且 50% 的現有技能在 2025 年將不再適用。</li>
+</ul>
+</li>
+<li class="">
+<p>蜿蜒職涯的核心精神：</p>
+<ul>
+<li class="">蜿蜒職涯充滿不確定性，但也充滿可能性，變化隨時都在發生 。</li>
+<li class="">成功的定義是個人化的，每個人都有獨特的職涯路徑。</li>
+</ul>
+</li>
+<li class="">
+<p>重新定義學習關係：</p>
+<ul>
+<li class="">擺脫階梯要從重新定義我們與「學習」的關係開始，每個人都有機會策劃自己的學習藍圖。</li>
+<li class="">學習不再受限於組織層級或特定部門，也不僅發生在參加課程時。</li>
+<li class="">在蜿蜒職涯中，每個人都是學習者，同時也是老師，可以透過相互學習成長。</li>
+</ul>
+</li>
+<li class="">
+<p>改變對晉升的看法：</p>
+<ul>
+<li class="">職涯階梯只往一個方向走，將晉升純粹等同於升職會讓人錯失許多機會。</li>
+<li class="">應停止只問「下一個工作是什麼」，而是問「我對探索哪些職涯可能性感到好奇」。</li>
+</ul>
+</li>
+<li class="">
+<p>擁抱與利用個人才能：</p>
+<ul>
+<li class="">在階梯職涯中，個人身份常被職稱所定義，而非擁有的才能。</li>
+<li class="">每個人都擁有才能，且能以多種方式運用這些才能，不必將職涯受限於單一模式。</li>
+</ul>
+</li>
+</ol>
+<h1>應用行動方案</h1>
+<ol>
+<li class="">策劃個人學習藍圖：主動選擇適合自己的學習資源，例如觀看 TED 演講、閱讀書籍或部落格、收聽 Podcast 等，將發展掌握在自己手中。</li>
+<li class="">探索職涯可能性：給自己許可去探索感興趣的、甚至是不覺得準備好的或曾被放棄的職涯選項。</li>
+<li class="">尋求組織支持與環境：鼓勵所屬組織或部門建立類似 Cook 公司的「夢想學院」等計畫，支持同事探索組織內外的各種職涯。</li>
+<li class="">展現真實自我與獨特性：在工作中「做你喜歡的事，以真實面貌示人」，將獨特性帶入組織，不必迎合特定模式。</li>
+</ol>
+<h1>問題討論</h1>
+<ol>
+<li class="">你如何界定自己職涯中的「成功」，它是否仍然是傳統的升職和加薪？</li>
+<li class="">在你目前的工作環境中，職涯階梯的概念如何限制了你學習或發展新技能的機會？</li>
+<li class="">你可以採取什麼具體行動，來重新策劃自己的學習路徑，而不依賴公司提供的培訓？</li>
+<li class="">你曾經放棄的、但現在仍感興趣的職涯可能性是什麼？你會如何開始探索它？</li>
+<li class="">作為一名管理者或導師，你如何能成為「蜿蜒職涯」的倡導者，幫助他人探索他們的可能性？</li>
+</ol>
+<h1>總結</h1>
+<p>Sarah Ellis 和 Helen Tupper 提出「蜿蜒職涯」的概念，是對單向、線性「職涯階梯」的強烈挑戰。面對當今變動快速的工作環境，職涯發展需要從外部標準轉向個人好奇心與才能。這場演講的關鍵在於呼籲一個激進的「徹底重做」，鼓勵個人拿回職涯的控制權，透過持續學習、探索多樣化的可能性來定義自己的成功。這不僅是對個人的呼籲，也是對組織的警示：擁抱蜿蜒，才能留住那些不斷適應、好奇、自信和持續學習的員工。是時候「走出階梯，邁入蜿蜒」了。</p>
+<h1>參考文件</h1>
+<p><a href="http://www.youtube.com/watch?v=1ALfKWG2nmw" target="_blank" rel="noopener noreferrer" class="">影片連結：The best career path isn't always a straight line | TED</a></p>]]></content:encoded>
+            <category>職涯</category>
+            <category>影音</category>
+            <category>TED 演講</category>
+        </item>
+    </channel>
+</rss>
