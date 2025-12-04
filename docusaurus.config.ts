@@ -61,8 +61,7 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: undefined,
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -95,20 +94,20 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
-          position: "left",
-          label: "職涯技能樹",
-        },
-        {
-          type: "docSidebar",
           sidebarId: "resourceSidebar",
           position: "left",
-          label: "推薦學習資源",
+          label: "學習資源",
         },
-        // { to: "/blog", label: "部落格", position: "left" },
+        { to: "blog", label: "熱門文章", position: "left" },
+        // {
+        //   type: "docSidebar",
+        //   sidebarId: "tutorialSidebar",
+        //   position: "left",
+        //   label: "職涯技能樹",
+        // },
         {
           href: "https://facebook.com/groups/careertags",
-          label: "加入職涯成長交流社群",
+          label: "加入職涯與個人成長社群",
           position: "right",
         },
       ],
@@ -120,25 +119,33 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "職涯技能樹",
-              to: "/docs/skill-trees",
-            },
-            {
-              label: "推薦學習資源",
+              label: "學習資源",
               to: "/docs/resources",
             },
+            {
+              label: "熱門文章",
+              to: "/blog/",
+            },
+            // {
+            //   label: "職涯技能樹",
+            //   to: "/docs/skill-trees",
+            // },
           ],
         },
         {
           title: "Community",
           items: [
             {
-              label: "Facebook",
+              label: "Facebook Group",
               href: "https://facebook.com/groups/careertags",
             },
             {
-              label: "Instagram",
-              href: "https://instagram.com/careertags",
+              label: "Follow us on Facebook",
+              href: "https://www.facebook.com/careertags",
+            },
+            {
+              label: "Follow us on Instagram",
+              href: "https://www.instagram.com/careertags",
             },
           ],
         },

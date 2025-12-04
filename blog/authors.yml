@@ -6,7 +6,6 @@ careertags:
   page: true
     # customize the url of the author page at /blog/authors/<permalink>
   socials:
-    github: careertags
     instagram: careertags
     website: https://www.careertags.com
 
