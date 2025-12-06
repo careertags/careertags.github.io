@@ -11,9 +11,13 @@ tags:
   - TSMC
   - 影音
   - Acquired
-image: https://www.careertags.com/img/posts/tsmc-founder-morris-chang-acquired-interview-summary-1.png
+image: https://www.careertags.com/img/posts/video-notes-tsmc-founder-morris-chang-acquired-interview-summary-1.png
 date: 2025-01-27T10:00
 hide_table_of_contents: false
+---
+
+![](@site/static/img/posts/video-notes-tsmc-founder-morris-chang-acquired-interview-summary-1.jpg)
+
 ---
 
 > 「當你能在一年內將被裁員的人重新僱用時，代表你根本不應該裁員。」
