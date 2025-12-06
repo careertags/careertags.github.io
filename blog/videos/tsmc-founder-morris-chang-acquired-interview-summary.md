@@ -10,9 +10,9 @@ tags:
   - 台積電
   - TSMC
   - 影音
-  - TED 演講
+  - Acquired
 image: https://www.careertags.com/img/posts/tsmc-founder-morris-chang-acquired-interview-summary-1.png
-date: 2021-06-12T10:00
+date: 2025-01-27T10:00
 hide_table_of_contents: false
 ---
 
