@@ -63,4 +63,4 @@ hide_table_of_contents: false
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/FZItbr4ZJnc?si=kxodAfDBlYIQpOWX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-[影片連結：We’re Doing AI All Wrong. Here’s How to Get It Right | Sasha Luccioni | TED](http://www.youtube.com/watch?v=FZItbr4ZJnc)
+[影片連結：TSMC founder Morris Chang | Acquired](http://www.youtube.com/watch?v=FZItbr4ZJnc)
