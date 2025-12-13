@@ -49,12 +49,14 @@ const config: Config = {
         },
         docs: {
           sidebarPath: "./sidebars.ts",
+          routeBasePath: "/resources",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: undefined,
         },
         blog: {
           showReadingTime: true,
+          blogSidebarCount: "ALL",
           feedOptions: {
             type: ["rss", "atom"],
             xslt: true,
@@ -98,7 +100,7 @@ const config: Config = {
           position: "left",
           label: "學習資源",
         },
-        { to: "blog", label: "熱門文章", position: "left" },
+        { to: "blog", label: "最新文章", position: "left" },
         // {
         //   type: "docSidebar",
         //   sidebarId: "tutorialSidebar",
@@ -120,16 +122,12 @@ const config: Config = {
           items: [
             {
               label: "學習資源",
-              to: "/docs/resources",
+              to: "/resources",
             },
             {
               label: "熱門文章",
               to: "/blog/",
             },
-            // {
-            //   label: "職涯技能樹",
-            //   to: "/docs/skill-trees",
-            // },
           ],
         },
         {
