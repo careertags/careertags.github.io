@@ -21,7 +21,7 @@ sidebar_position: 1
 
 ### [📋 官方推薦清單](/resources/official-lists)
 
-由業界專家與社群共同推薦整理的優質學習資源，包含書籍、課程、YouTube 影音等。
+由業界專家與社群共同推薦整理的優質學習資源，包含書籍、線上課程、Podcast 和 YouTube 影音等。
 
 ### [🌳 職涯技能樹](/resources/skill-trees)
 
