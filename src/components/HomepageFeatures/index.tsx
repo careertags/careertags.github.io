@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     Png: require("@site/static/img/save-icon.png").default,
     description: (
       <>
-        保障隱私，免登入求職平台。一鍵收藏跨平台職缺（104、1111、Yourator、Cake、LinkedIn、Indeed
+        保障隱私，免登入求職平台。一鍵收藏跨平台職缺（104、1111、Yourator、Cake、LinkedIn
         等平台）並支援匯出功能 ，不用再手動複製貼上
       </>
     ),
@@ -57,6 +57,59 @@ function Feature({ title, Png, description }: FeatureItem) {
   );
 }
 
+function ProductShowcase(): ReactNode {
+  const features = [
+    {
+      image: "/img/cover-1.jpg",
+      title: "一鍵收藏跨平台職缺",
+      description: "支援 104、1111、Yourator、Cake、LinkedIn 等平台",
+    },
+    {
+      image: "/img/cover-2.jpg",
+      title: "系統化管理投遞狀態",
+      description: "視覺化看板清楚掌握求職進度",
+    },
+    {
+      image: "/img/cover-3.jpg",
+      title: "本地端儲存免登入",
+      description: "隱私優先，免登入使用",
+    },
+    {
+      image: "/img/cover-4.jpg",
+      title: "支援匯入匯出好方便",
+      description:
+        "無痛匯入試算表筆記工具（Excel、Google Sheets 等），打造你的第二大腦",
+    },
+  ];
+
+  return (
+    <section className={styles.showcase}>
+      <div className="container">
+        <Heading as="h2" className="text--center margin-bottom--lg">
+          功能特色
+        </Heading>
+        <div className="row">
+          {features.map((feature, idx) => (
+            <div key={idx} className="col col--6 margin-bottom--lg">
+              <div className={styles.featureCard}>
+                <img
+                  src={feature.image}
+                  alt={feature.title}
+                  className={styles.featureImage}
+                />
+                <div className={styles.featureContent}>
+                  <h3>{feature.title}</h3>
+                  <p>{feature.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
@@ -66,6 +119,9 @@ export default function HomepageFeatures(): ReactNode {
             <Feature key={idx} {...props} />
           ))}
         </div>
+        <hr />
+        <br />
+        <ProductShowcase />
       </div>
     </section>
   );
