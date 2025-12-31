@@ -5,3 +5,6 @@ https://www.careertags.com
 FB：https://www.facebook.com/careertags
 IG：https://www.instagram.com/careertags
 電子報：https://careertags.substack.com/
+
+#CareerTags #職涯書籤 #職涯發展 #個人成長 #轉職 #求職
+#職場 #職涯 #career #life #自我成長 #學習資源 #職場人生 #數位工具 #投資理財
