@@ -11,18 +11,24 @@ tags:
   - TSMC
   - 影音
   - Acquired
-image: https://www.careertags.com/img/posts/video-notes-tsmc-founder-morris-chang-acquired-interview-summary-1.jpg
+image: https://www.careertags.com/img/posts/tsmc-founder-morris-chang-interview-summary-acquired-video-notes-1.jpg
 date: 2025-01-27T10:00
 hide_table_of_contents: false
 ---
 
-![](@site/static/img/posts/video-notes-tsmc-founder-morris-chang-acquired-interview-summary-1.jpg)
+![](@site/static/img/posts/tsmc-founder-morris-chang-interview-summary-acquired-video-notes-1.jpg)
 
 ---
 
 ## 名言金句
 
 > 「只有專注做別人不做、別人不想做的事，才能成就真正的價值。」
+
+---
+
+![](@site/static/img/posts/tsmc-founder-morris-chang-interview-summary-acquired-video-notes-2.jpg)
+
+---
 
 ## 核心論點
 
@@ -33,6 +39,13 @@ hide_table_of_contents: false
 為了確保長期競爭力，張忠謀設立了兩個關鍵的財務承諾：堅持每年將研發支出維持在營收的 8%，不因經濟衰退而動搖；並在大規模資本支出上採取「押注」策略。這促使公司在 28 奈米節點進行了數倍於以往的鉅額投資，精準地抓住了智慧型手機時代爆發的「甜蜜點」（Sweet Spot），從而拉開了與競爭對手的技術距離，奠定了台積電在尖端製程上的領先地位。
 
 張忠謀將其在德州儀器（TI）時期對「學習曲線理論」（Learning Curve Theory）的深刻理解，應用到台積電的營運中。該理論的核心在於，透過最大化產量來持續降低單位成本，因此必須盡快擴大產能，以在競爭中取得領先地位並贏得所有訂單。這指導了台積電在關鍵節點上進行超前部署的資本支出決策，確保公司持續保持領先的製造規模和成本優勢，實現了該行業的自然壟斷特性。
+
+---
+
+![](@site/static/img/posts/tsmc-founder-morris-chang-interview-summary-acquired-video-notes-3.jpg)
+
+---
+
 
 <!-- truncate -->
 
