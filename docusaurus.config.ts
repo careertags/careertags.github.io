@@ -7,7 +7,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "CareerTags 職涯書籤",
   tagline: "一鍵收藏跨平台職缺和學習資源，系統化管理你的求職進度及職涯成長",
-  favicon: "https://www.careertags.com/favicon.ico",
+  favicon: "https://www.careertags.com/img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -24,7 +24,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "careertags", // Usually your GitHub org/user name.
-  projectName: "careertags.github.io", // 你的 repo 名稱
+  projectName: "careertags.github.io", // repo
 
   onBrokenLinks: "throw",
 
@@ -41,7 +41,7 @@ const config: Config = {
       "@docusaurus/preset-classic",
       {
         googleTagManager: {
-          containerId: "GTM-NM3JS43H", // 替換成你的 GTM 容器 ID
+          containerId: "GTM-NM3JS43H", // GTM
         },
         gtag: {
           trackingID: "G-8HR5NM6PBK",
@@ -75,12 +75,34 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
+  plugins: [
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        // index hash
+        hashed: true,
+        // language
+        language: ["en", "zh"],
+        // highlight term
+        highlightSearchTermsOnTargetPage: true,
+        // docs route base path
+        docsRouteBasePath: "/resources",
+        blogRouteBasePath: "/blog",
+      },
+    ],
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: "https://www.careertags.com/img/logo.png",
     // colorMode: {
     //   respectPrefersColorScheme: true,
+    // },
+    // algolia: {
+    //   appId: "HHT6LFI2CT",
+    //   apiKey: "ff0205c345c78cc43d0b19adf2c47826",
+    //   indexName: "prod_NAME",
+    //   contextualSearch: true,
+    //   searchPagePath: "search",
     // },
     colorMode: {
       defaultMode: "light",
@@ -109,8 +131,8 @@ const config: Config = {
         // },
         {
           href: "https://facebook.com/groups/careertags",
-          label: "加入職涯與個人成長社群",
-          position: "right",
+          label: "職涯與個人成長社群",
+          position: "left",
         },
       ],
     },
