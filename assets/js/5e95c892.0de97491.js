@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkcareertags_github_io=globalThis.webpackChunkcareertags_github_io||[]).push([[9647],{7121:(e,r,a)=>{a.r(r),a.d(r,{default:()=>l});a(6540);var s=a(4164),t=a(7559),u=a(5500),c=a(2831),i=a(3544),h=a(4848);function l(e){return(0,h.jsx)(u.e3,{className:(0,s.A)(t.G.wrapper.docsPages),children:(0,h.jsx)(i.A,{children:(0,c.v)(e.route.routes)})})}}}]);
