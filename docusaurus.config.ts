@@ -116,13 +116,14 @@ const config: Config = {
         src: "img/logo.png",
       },
       items: [
+        { to: "/blog", label: "最新文章", position: "left" },
         {
           type: "docSidebar",
           sidebarId: "resourceSidebar",
           position: "left",
           label: "學習資源",
         },
-        { to: "blog", label: "最新文章", position: "left" },
+        { to: "/about", label: "關於我們", position: "left" },
         // {
         //   type: "docSidebar",
         //   sidebarId: "tutorialSidebar",
@@ -147,8 +148,8 @@ const config: Config = {
               to: "/resources",
             },
             {
-              label: "熱門文章",
-              to: "/blog/",
+              label: "最新文章",
+              to: "/blog",
             },
           ],
         },
