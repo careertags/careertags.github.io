@@ -57,6 +57,7 @@ const config: Config = {
         blog: {
           showReadingTime: true,
           blogSidebarCount: "ALL",
+          postsPerPage: 10,
           feedOptions: {
             type: ["rss", "atom"],
             xslt: true,
@@ -105,8 +106,8 @@ const config: Config = {
     //   searchPagePath: "search",
     // },
     colorMode: {
-      defaultMode: "light",
-      disableSwitch: false,
+      defaultMode: "dark",
+      disableSwitch: true,
       respectPrefersColorScheme: false,
     },
     navbar: {

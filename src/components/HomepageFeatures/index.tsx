@@ -119,7 +119,7 @@ export default function HomepageFeatures(): ReactNode {
             <Feature key={idx} {...props} />
           ))}
         </div>
-        <hr />
+        <br />
         <br />
         <ProductShowcase />
       </div>

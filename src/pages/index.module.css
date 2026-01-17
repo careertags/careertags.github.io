@@ -4,10 +4,13 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 8rem 0;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  background: linear-gradient(rgba(25, 60, 71, 0.6), rgba(25, 60, 71, 0.6)),
+    url("https://images.unsplash.com/photo-1606244667418-55d798703600?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNvd29ya3xlbnwwfHwwfHx8MA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 996px) {
