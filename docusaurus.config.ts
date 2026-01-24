@@ -43,10 +43,6 @@ const config: Config = {
         googleTagManager: {
           containerId: "GTM-NM3JS43H", // GTM
         },
-        gtag: {
-          trackingID: "G-8HR5NM6PBK",
-          anonymizeIP: true,
-        },
         docs: {
           sidebarPath: "./sidebars.ts",
           routeBasePath: "/resources",
