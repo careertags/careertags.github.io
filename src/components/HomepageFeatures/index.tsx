@@ -11,22 +11,21 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "跨平台一鍵收藏",
+    title: "一鍵收藏跨平台職缺和學習資源",
     Png: require("@site/static/img/save-icon.png").default,
     description: (
       <>
-        保障隱私，免登入求職平台。一鍵收藏跨平台職缺（104、1111、Yourator、Cake、LinkedIn
-        等平台）並支援匯出功能 ，不用再手動複製貼上
+        保障隱私，免登入求職平台。一鍵收藏跨平台職缺和學習資源並支援匯出功能
+        ，不用再手動複製貼上
       </>
     ),
   },
   {
-    title: "系統化管理投遞狀態",
+    title: "系統化管理投遞狀態和學習進度",
     Png: require("@site/static/img/dashboard-icon.png").default,
     description: (
       <>
-        視覺化看板清楚掌握求職進度（已收藏 → 已投遞 → 已讀取 → 面試中 → Offer /
-        無聲卡）。為每個機會加入註記：面試筆記、薪資談判等，不再焦慮等待回覆
+        視覺化看板清楚掌握投遞狀態和學習進度。為每筆書籤加入筆記和標籤，不再因為資訊爆炸感到焦慮內耗
       </>
     ),
   },
@@ -35,8 +34,7 @@ const FeatureList: FeatureItem[] = [
     Png: require("@site/static/img/skill-tree-icon.png").default,
     description: (
       <>
-        本地端儲存書籤，打造你的專屬職涯知識庫（支援書籍、線上課程、YouTube
-        影音等），有系統記錄自己的成長。同時支援匯入匯出分享推薦學習資源
+        本地端儲存書籤，打造你的專屬職涯知識庫，有系統記錄自己的成長。同時支援匯入匯出分享學習資源
       </>
     ),
   },
