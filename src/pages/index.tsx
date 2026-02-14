@@ -28,7 +28,7 @@ function HomepageHeader() {
             className="margin-left--sm button button--secondary button--lg"
             to="https://chromewebstore.google.com/detail/careertags/hgbdlhjfbbklmcibbnecaoijkhmaeeop?hl=zh-tw"
           >
-            免費下載
+            開始學習
           </Link>
         </div>
       </div>
