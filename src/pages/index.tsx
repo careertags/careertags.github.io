@@ -26,7 +26,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className="margin-left--sm button button--secondary button--lg"
-            to="https://chromewebstore.google.com/detail/careertags/hgbdlhjfbbklmcibbnecaoijkhmaeeop?hl=zh-tw"
+            to="/resources"
           >
             開始學習
           </Link>
