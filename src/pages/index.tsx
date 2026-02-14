@@ -25,7 +25,7 @@ function HomepageHeader() {
             免費下載
           </Link>
           <Link
-            className="button button--secondary button--lg"
+            className="margin-left--sm button button--secondary button--lg"
             to="https://chromewebstore.google.com/detail/careertags/hgbdlhjfbbklmcibbnecaoijkhmaeeop?hl=zh-tw"
           >
             免費下載
