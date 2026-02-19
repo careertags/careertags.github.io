@@ -18,17 +18,14 @@ hide_table_of_contents: false
 
 ![](@site/static/img/posts/tsmc-founder-morris-chang-interview-summary-acquired-video-notes-1.jpg)
 
----
 
 ## 名言金句
 
 > 「只有專注做別人不做、別人不想做的事，才能成就真正的價值。」
 
----
 
 ![](@site/static/img/posts/tsmc-founder-morris-chang-interview-summary-acquired-video-notes-2.jpg)
 
----
 
 ## 核心論點
 
@@ -40,11 +37,9 @@ hide_table_of_contents: false
 
 張忠謀將其在德州儀器（TI）時期對「學習曲線理論」（Learning Curve Theory）的深刻理解，應用到台積電的營運中。該理論的核心在於，透過最大化產量來持續降低單位成本，因此必須盡快擴大產能，以在競爭中取得領先地位並贏得所有訂單。這指導了台積電在關鍵節點上進行超前部署的資本支出決策，確保公司持續保持領先的製造規模和成本優勢，實現了該行業的自然壟斷特性。
 
----
 
 ![](@site/static/img/posts/tsmc-founder-morris-chang-interview-summary-acquired-video-notes-3.jpg)
 
----
 
 
 <!-- truncate -->

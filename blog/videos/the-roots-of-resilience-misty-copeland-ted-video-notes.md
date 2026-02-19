@@ -14,17 +14,14 @@ hide_table_of_contents: false
 
 ![](@site/static/img/posts/the-roots-of-resilience-misty-copeland-ted-video-notes-1.jpg)
 
----
 
 ## 名言金句
 
 > 「韌性並非堅不可摧，而是帶著目標穿越痛苦，讓自己在動盪不安的根基上保持平靜。」
 
----
 
 ![](@site/static/img/posts/the-roots-of-resilience-misty-copeland-ted-video-notes-2.jpg)
 
----
 
 ## 核心論點
 
@@ -36,11 +33,9 @@ hide_table_of_contents: false
 
 最終，演講指出韌性並不會隨著成就的達成而終結，而會引發「接下來該做什麼？」的反思。科普蘭選擇擴大舞台，透過創立基金會、出版書籍、拍攝電影等方式，將芭蕾的美與穩定感帶入更多曾被排斥的社群，確保未來的舞台足夠寬廣，讓所有人都能看見自己並建立內在的韌性。
 
----
 
 ![](@site/static/img/posts/the-roots-of-resilience-misty-copeland-ted-video-notes-3.jpg)
 
----
 
 <!-- truncate -->
 

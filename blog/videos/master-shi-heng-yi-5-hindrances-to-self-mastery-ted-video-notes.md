@@ -20,17 +20,14 @@ hide_table_of_contents: false
 
 ![](@site/static/img/posts/master-shi-heng-yi-5-hindrances-to-self-mastery-ted-video-notes-1.jpg)
 
----
 
 ## 名言金句
 
 > 「人生的道路獨一無二，若想為生命帶來價值，你必須學會駕馭自己，不讓障礙阻止你。」
 
----
 
 ![](@site/static/img/posts/master-shi-heng-yi-5-hindrances-to-self-mastery-ted-video-notes-2.jpg)
 
----
 
 ## 核心論點
 
@@ -40,11 +37,8 @@ hide_table_of_contents: false
 
 講者明確指出，在個人的旅途中，有五種常見的心靈障礙會阻止人們前進。這些障礙是心智的不同狀態，它們會讓視野變得模糊，難以做出正確的選擇。克服這些障礙的關鍵，在於調整生活結構以預防它們的產生，並在它們出現時，運用系統性的方法來移除它們，最終達到不與自身情緒、思想或身體狀態認同的「不執著」境界。
 
----
-
 ![](@site/static/img/posts/master-shi-heng-yi-5-hindrances-to-self-mastery-ted-video-notes-3.jpg)
 
----
 
 <!-- truncate -->
 

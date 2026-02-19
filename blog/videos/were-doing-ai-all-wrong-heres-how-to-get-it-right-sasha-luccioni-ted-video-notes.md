@@ -15,27 +15,22 @@ hide_table_of_contents: false
 
 ![](@site/static/img/posts/were-doing-ai-all-wrong-heres-how-to-get-it-right-sasha-luccioni-ted-video-notes-1.jpg)
 
----
 
 ## 名言金句
 
 > 「AI 應是小而強大，回饋地球，而非取走資源。」
 
----
 
 ![](@site/static/img/posts/were-doing-ai-all-wrong-heres-how-to-get-it-right-sasha-luccioni-ted-video-notes-2.jpg)
 
----
 
 ## 核心論點
 
 這次要跟大家分享 Sasha Luccioni 博士的 TED 演講。她挑戰了當前科技界「大即是好」（Bigger is Better）的 AI 發展思維。講者指出，少數大型科技公司正以追求「超級智慧」為名，建造耗費巨量資源和能源的超大型語言模型（LLMs）和資料中心，其行為模式如同「大石油公司」（Big Oil）一樣，對環境和社會造成巨大負面影響。她主張，AI 的未來應轉向「小而強大」的模型，並強調永續性、透明度和問責制的重要性。
 
----
 
 ![](@site/static/img/posts/were-doing-ai-all-wrong-heres-how-to-get-it-right-sasha-luccioni-ted-video-notes-3.jpg)
 
----
 
 <!-- truncate -->
 

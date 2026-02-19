@@ -12,21 +12,20 @@ date: 2021-06-12T10:00
 hide_table_of_contents: false
 ---
 
+```
+「你是否也深陷在職涯階梯的焦慮中，總覺得沒往上爬就是失敗？」
+```
+
 ![](@site/static/img/posts/sarah-ellis-and-helen-tupper-the-best-career-path-isnt-always-a-straight-line-ted-video-notes-1.jpg)
 
----
-
->「你是否也深陷在職涯階梯的焦慮中，總覺得沒往上爬就是失敗？」
 
 ## 名言金句
 
 > 「放棄對階梯式晉升的執著，轉而擁抱充滿可能性的波浪式發展，唯有在變動中尋找適應力，才能在充滿不確定的職場未來中獲得真正的成長。」
 
----
 
 ![](@site/static/img/posts/sarah-ellis-and-helen-tupper-the-best-career-path-isnt-always-a-straight-line-ted-video-notes-2.jpg)
 
----
 
 ## 核心論點
 
@@ -36,11 +35,9 @@ hide_table_of_contents: false
 
 波浪式發展的核心不在於放棄升遷，而在於重新定義進步。它鼓勵工作者專注於能力的轉化與網絡的建立，而非僅僅追求頭銜的改變。當環境變得複雜且難以預測時，擁有適應波浪的能力比擁有攀爬階梯的體力更為重要。這種轉變不僅有助於個人在職業生涯中找到更多的幸福感與韌性，也能讓企業從中受益，因為靈活且具備跨領域思考的員工更能應對未來的挑戰。
 
----
 
 ![](@site/static/img/posts/sarah-ellis-and-helen-tupper-the-best-career-path-isnt-always-a-straight-line-ted-video-notes-3.jpg)
 
----
 
 <!-- truncate -->
 

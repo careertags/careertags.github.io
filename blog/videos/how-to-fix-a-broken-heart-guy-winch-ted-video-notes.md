@@ -22,17 +22,14 @@ hide_table_of_contents: false
 
 ![](@site/static/img/posts/video-notes-how-to-fix-a-broken-heart-guy-winch-ted-1.jpg)
 
----
 
 ## 名言金句
 
 > 「療癒破碎的心不是一段旅程，而是一場戰鬥，理智是你最強大的武器。」
 
----
 
 ![](@site/static/img/posts/video-notes-how-to-fix-a-broken-heart-guy-winch-ted-2.jpg)
 
----
 
 ## 核心論點
 
@@ -42,11 +39,9 @@ hide_table_of_contents: false
 
 成功的復原策略，在於**重新奪回對自己思維的主導權**。這包括停止尋求一個「滿意」的分手解釋（因為這樣的解釋並不存在），以及主動對抗**理想化**的心理傾向。他建議透過積極列舉前任的缺點和關係中不適宜之處，來平衡對過往美好記憶的沉溺。更重要的是，必須**識別並填補**失戀在個人生活、社交圈與身份認同上留下的**多重空虛**，才能真正迎向治癒。
 
----
 
 ![](@site/static/img/posts/video-notes-how-to-fix-a-broken-heart-guy-winch-ted-3.jpg)
 
----
 
 <!-- truncate -->
 
