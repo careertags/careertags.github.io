@@ -37,7 +37,7 @@
 
   --ifm-background-color: var(--ct-bg-base);
   --ifm-background-surface-color: var(--ct-bg-surface);
-  --ifm-navbar-background-color: rgba(10, 10, 15, 0.88);
+  --ifm-navbar-background-color: rgba(10, 10, 15);
   --ifm-footer-background-color: #07070c;
   --ifm-card-background-color: var(--ct-bg-card);
   --ifm-color-emphasis-100: var(--ct-bg-surface);
@@ -50,12 +50,26 @@
 }
 
 /* ── Navbar ── */
+/*
+ * backdrop-filter MUST live on .navbar__inner, NOT on .navbar itself.
+ * Applying backdrop-filter to .navbar creates a new containing block for
+ * position:fixed children (including .navbar-sidebar), which traps the
+ * mobile drawer inside the sticky navbar bar and makes menu items unclickable.
+ */
 .navbar {
+  border-bottom: 1px solid var(--ct-border);
+  box-shadow: none;
+}
+
+.navbar__inner {
   background-color: rgba(10, 10, 15, 0.88);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--ct-border);
-  box-shadow: none;
+}
+
+/* Keep the mobile sidebar fully opaque so it looks right */
+.navbar-sidebar {
+  background-color: #0e0e16 !important;
 }
 
 .navbar__title {

@@ -13,8 +13,8 @@ function StatsBar(): ReactNode {
     { value: "5+", label: "支援的求職平台" },
     { value: "10+", label: "支援的學習資源平台" },
     { value: "省時", label: "快速收藏、減少複製貼上" },
-    { value: "方便", label: "支援匯出、匯入 .csv 檔案" },
-    { value: "免費", label: "完全免費下載使用" },
+    { value: "省力", label: "精選學習資源，共享學習地圖" },
+    { value: "安全", label: "支援匯出、匯入 .csv 檔案" },
   ];
   return (
     <div className="ct-stats-bar">
