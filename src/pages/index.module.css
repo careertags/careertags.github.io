@@ -44,11 +44,11 @@
 
 /* Gradient clip title */
 .heroBanner :global(.hero__title) {
-  background: linear-gradient(140deg, #ffffff 0%, #80deea 45%, #00bcd4 100%);
+  background: #ffffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-size: clamp(2.4rem, 5vw, 3rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.1;
