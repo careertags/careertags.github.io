@@ -48,11 +48,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-size: clamp(2.4rem, 5vw, 3rem);
+  font-size: clamp(1.6rem, 5vw, 3rem);
   font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
   margin-bottom: 1.2rem;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 .heroBanner :global(.hero__subtitle) {
