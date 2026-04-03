@@ -98,7 +98,7 @@ function ProductShowcase(): ReactNode {
             key={idx}
             className={clsx(
               styles.showcaseRow,
-              idx % 2 === 1 && styles.showcaseRowReverse
+              idx % 2 === 1 && styles.showcaseRowReverse,
             )}
           >
             <div className={styles.showcaseImageWrap}>
@@ -126,7 +126,7 @@ export default function HomepageFeatures(): ReactNode {
         <div className="container">
           <div className={styles.featuresPreamble}>
             <span className="ct-section-badge">核心優勢</span>
-            <Heading as="h2">為何選擇 CareerTags？</Heading>
+            <Heading as="h2">什麼是 CareerTags？</Heading>
           </div>
           <div className="row">
             {FeatureList.map((props, idx) => (
@@ -139,4 +139,3 @@ export default function HomepageFeatures(): ReactNode {
     </>
   );
 }
-
