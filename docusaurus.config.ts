@@ -175,6 +175,10 @@ const config: Config = {
               label: "Contact Us",
               to: "mailto:careertags.com@gmail.com",
             },
+            {
+              label: "內容來源與下架申請",
+              to: "/content-policy",
+            },
           ],
         },
       ],
