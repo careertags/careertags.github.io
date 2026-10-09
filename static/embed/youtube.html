@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>CareerTags player</title>
+<!--
+  A YouTube embed for the CareerTags Chrome extension.
+
+  YouTube refuses embeds that arrive without an http(s) referrer (player
+  error 153), and an extension page's origin is chrome-extension://, which
+  is never sent. The extension frames this page instead, and this page
+  frames YouTube, so the embed request carries www.careertags.com as its
+  referrer. Nothing else is loaded and nothing is tracked.
+
+  Query: v = video id (required), start = seconds, autoplay = 1.
+-->
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+  iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; }
+  p { color: #ccc; font: 14px/1.5 system-ui, sans-serif; text-align: center; margin-top: 40vh; }
+</style>
+</head>
+<body>
+<script>
+  (function () {
+    var params = new URLSearchParams(location.search);
+    var id = params.get("v") || "";
+    if (!/^[A-Za-z0-9_-]{11}$/.test(id)) {
+      var p = document.createElement("p");
+      p.textContent = "Video not found.";
+      document.body.appendChild(p);
+      return;
+    }
+    var embed = new URLSearchParams({ rel: "0", modestbranding: "1", playsinline: "1" });
+    var start = parseInt(params.get("start") || "0", 10);
+    if (start > 0) embed.set("start", String(start));
+    if (params.get("autoplay") === "1") embed.set("autoplay", "1");
+
+    var frame = document.createElement("iframe");
+    frame.src = "https://www.youtube-nocookie.com/embed/" + id + "?" + embed;
+    frame.title = "YouTube video player";
+    frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    frame.allowFullscreen = true;
+    frame.referrerPolicy = "strict-origin-when-cross-origin";
+    document.body.appendChild(frame);
+  })();
+</script>
+</body>
+</html>
