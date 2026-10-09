@@ -7,7 +7,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "CareerTags 職涯書籤",
   tagline:
-    "一鍵收藏跨平台職缺與學習資源，透過視覺化看板追蹤求職與學習進度，打造專屬你的職涯知識庫",
+    "每天 10 分鐘，打造你的職場軟實力。精選職涯發展與個人成長的影片和 Podcast，附重點精華與行動計劃",
   favicon: "/img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
