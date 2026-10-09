@@ -10,11 +10,11 @@ import styles from "./index.module.css";
 
 function StatsBar(): ReactNode {
   const stats = [
-    { value: "5+", label: "支援的求職平台" },
-    { value: "10+", label: "支援的學習資源平台" },
-    { value: "省時", label: "快速收藏、減少複製貼上" },
-    { value: "省力", label: "精選學習資源，共享職涯工具箱" },
-    { value: "安全", label: "支援匯出、匯入 .csv 檔案" },
+    { value: "10 分鐘", label: "每天一則精選影片或 Podcast" },
+    { value: "9 種", label: "職涯目標，從求職到在職成長" },
+    { value: "11 個", label: "目標職位的技能藍圖" },
+    { value: "4 大", label: "求職平台一鍵收藏職缺" },
+    { value: "安全", label: "資料存在本機，支援匯出匯入" },
   ];
   return (
     <div className="ct-stats-bar">
@@ -61,7 +61,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="一鍵收藏跨平台職缺和學習資源，系統化管理你的求職進度及職涯成長"
+      description="每天 10 分鐘，打造你的職場軟實力。設定職涯目標、找出技能缺口、記錄實戰日誌，把練習累積成面試和升遷用得上的職場故事"
     >
       <HomepageHeader />
       <StatsBar />

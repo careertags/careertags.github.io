@@ -5,47 +5,49 @@ import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
-  Png?: string;
   description: ReactNode;
 };
 
+// 從設定目標、找出缺口，到練習並累積成可以說的故事。
 const FeatureList: FeatureItem[] = [
   {
-    title: "一鍵收藏跨平台職缺和學習資源",
-    Png: require("@site/static/img/save-icon.png").default,
+    title: "🎯 我的目標",
     description: (
       <>
-        保障隱私，免登入求職平台。一鍵收藏跨平台職缺和學習資源並支援匯出功能，不用再手動複製貼上
+        社會新鮮人、正在找工作、在職想轉職、升遷加薪、新手主管、創業副業……選出你現在的狀態，首頁就會推薦對應的主題和下一步
       </>
     ),
   },
   {
-    title: "系統化管理投遞狀態和學習進度",
-    Png: require("@site/static/img/dashboard-icon.png").default,
+    title: "🧭 技能缺口分析",
     description: (
       <>
-        視覺化看板清楚掌握投遞狀態和學習進度。為每筆書籤加入筆記和標籤，不再因為資訊爆炸感到焦慮內耗
+        選一個目標職位，或用收藏的職缺，看出這份工作最看重哪些技能、你已經練過哪些、還差哪幾項
       </>
     ),
   },
   {
-    title: "打造你的職涯知識庫",
-    Png: require("@site/static/img/skill-tree-icon.png").default,
+    title: "📝 實戰日誌",
     description: (
       <>
-        本地端儲存書籤，打造你的專屬職涯知識庫，有系統記錄自己的成長。同時支援匯入匯出分享學習資源
+        每天 10 分鐘看完一則精選影片或 Podcast，挑一個行動計劃實際去做，再回來記下情境、結果和調整
+      </>
+    ),
+  },
+  {
+    title: "⭐ 職場故事",
+    description: (
+      <>
+        把一次實戰經驗整理成 STAR 故事（情境、任務、行動、結果），面試、升遷、自評時就有具體例子可說
       </>
     ),
   },
 ];
 
-function Feature({ title, Png, description }: FeatureItem) {
+function Feature({ title, description }: FeatureItem) {
   return (
-    <div className={clsx("col col--4")}>
+    <div className={clsx("col col--3")}>
       <div className={styles.glassCard}>
-        <div className={styles.iconWrap}>
-          <img src={Png} className={styles.featurePng} role="img" alt={title} />
-        </div>
         <h3 className={styles.cardTitle}>{title}</h3>
         <p className={styles.cardDesc}>{description}</p>
       </div>
@@ -59,7 +61,7 @@ function ProductShowcase(): ReactNode {
       image: "/img/cover-1.jpg",
       title: "✅ 一鍵收藏跨平台職缺",
       description:
-        "瀏覽跨平台職缺時，直接點擊瀏覽器擴充功能即可自動擷取職位、公司、薪資等資訊並儲存",
+        "在 104、Yourator、Cake、LinkedIn 瀏覽職缺時，直接點擊瀏覽器擴充功能即可自動擷取職位、公司、薪資等資訊並儲存",
     },
     {
       image: "/img/cover-2.jpg",
@@ -125,8 +127,12 @@ export default function HomepageFeatures(): ReactNode {
       <section className={styles.features}>
         <div className="container">
           <div className={styles.featuresPreamble}>
-            <span className="ct-section-badge">核心優勢</span>
-            <Heading as="h2">什麼是 CareerTags？</Heading>
+            <span className="ct-section-badge">全新功能</span>
+            <Heading as="h2">從設定目標，到有故事可說</Heading>
+            <p className={styles.featuresLead}>
+              選好你的職涯目標，CareerTags
+              幫你找出技能缺口、每天練一點，再把練習累積成面試和升遷時用得上的職場故事
+            </p>
           </div>
           <div className="row">
             {FeatureList.map((props, idx) => (

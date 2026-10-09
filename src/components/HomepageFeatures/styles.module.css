@@ -17,6 +17,14 @@
   margin-top: 0.5rem;
 }
 
+.featuresLead {
+  max-width: 640px;
+  margin: 1rem auto 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #6b7a8d;
+}
+
 /* ── Glass Card ── */
 .glassCard {
   height: 100%;
@@ -158,6 +166,19 @@
     flex-direction: column;
     gap: 1.75rem;
     margin-bottom: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .features :global(.col--3) {
+    --ifm-col-width: 50%;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .features :global(.col--3) {
+    --ifm-col-width: 100%;
   }
 }
 
