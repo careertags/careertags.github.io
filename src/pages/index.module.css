@@ -65,11 +65,16 @@
 
 /* The slogan's case, under it: narrower than the hero, quieter. */
 .heroLead {
-  max-width: 640px;
+  max-width: 720px;
   margin: 0.75rem auto 0;
   font-size: 0.98rem;
   line-height: 1.85;
   color: #8a9aab;
+}
+
+/* On a narrow screen the line breaks after a comma, never inside a phrase. */
+.heroLead span {
+  display: inline-block;
 }
 
 .heroBanner :global(.hero__subtitle) {

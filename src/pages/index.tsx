@@ -72,7 +72,9 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p className={styles.heroLead}>
-          從學習、實踐、反思到證明，將軟實力轉化為日常行動，讓每一次實踐都成為職涯成長的累積
+          <span>從學習、實踐、反思到證明，</span>
+          <span>將軟實力轉化為日常行動，</span>
+          <span>讓每一次實踐都成為職涯成長的累積</span>
         </p>
         <p className={styles.heroLeap}>Learn. Execute. Assess. Prove.</p>
         <div className={styles.ctaGroup}>
