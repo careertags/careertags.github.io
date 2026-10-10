@@ -59,7 +59,7 @@ CareerTags 提供 Chrome 擴充功能與 iOS、Android App。我們精選職涯�
 
 ## 學習主題
 
-學習資源以 TED、Harvard Business Review、Y Combinator 等英文經典影片與 Podcast 為主，目前收錄 120 多則，依 12 大主題分類，涵蓋 31 項職場技能。每則內容的標題、重點摘要、精華與行動計劃，會依你選擇的語言顯示。
+學習資源以 TED、Harvard Business Review、Y Combinator 等英文經典影片與 Podcast 為主，目前收錄 140 多則，依 12 大主題分類，涵蓋 31 項職場技能。每則內容的標題、重點摘要、精華與行動計劃，會依你選擇的語言顯示。
 
 | 主題 | 內容 |
 | --- | --- |
