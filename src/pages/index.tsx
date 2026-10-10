@@ -11,7 +11,7 @@ function StatsBar(): ReactNode {
   const stats = [
     { value: "15 分鐘", label: "每日學習時間" },
     { value: "12 大", label: "學習主題" },
-    { value: "140+ 則", label: "精選影片與 Podcast" },
+    { value: "220+ 則", label: "精選影片與 Podcast" },
     { value: "11 個", label: "目標職位技能模型" },
     { value: "本機", label: "資料儲存，免註冊登入" },
   ];
