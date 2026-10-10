@@ -76,7 +76,9 @@ function HomepageHeader() {
           <span>將軟實力轉化為日常行動，</span>
           <span>讓每一次實踐都成為職涯與個人成長的累積</span>
         </p>
-        <p className={styles.heroLeap}>Learn. Execute. Assess. Prove.</p>
+        <p className={styles.heroLeap}>
+          <b>L</b>earn. <b>E</b>xecute. <b>A</b>ssess. <b>P</b>rove.
+        </p>
         <div className={styles.ctaGroup}>
           <a
             href={CHROME_URL}
@@ -122,7 +124,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="CareerTags 職涯書籤：LEAP，每天 15 分鐘，躍升你的職涯。結合精選學習資源、每天 15 分鐘小行動、實戰日誌與 STAR 職場故事庫，以 LEAP（學習、實踐、反思、證明）把溝通、協作、思考與領導變成可累積的職涯成果。提供 Chrome 擴充功能與 iOS、Android App。"
+      description="CareerTags 職涯書籤：每天 15 分鐘，躍升你的職涯。結合精選學習資源、每天 15 分鐘小行動、實戰日誌與 STAR 職場故事庫，以 LEAP（學習、實踐、反思、證明）把溝通、協作、思考與領導變成可累積的職涯成果。提供 Chrome 擴充功能與 iOS、Android App。"
     >
       <HomepageHeader />
       <StatsBar />

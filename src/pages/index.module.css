@@ -86,9 +86,16 @@
 .heroLeap {
   margin: 0.9rem auto 0;
   font-size: 0.85rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.12em;
   color: #00bcd4;
+}
+
+/* The four initials spell LEAP. */
+.heroLeap b {
+  font-weight: 800;
+  font-size: 1.15em;
+  color: #4dd9ec;
 }
 
 @media screen and (max-width: 996px) {

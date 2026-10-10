@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "CareerTags 職涯書籤",
-  tagline: "LEAP：每天 15 分鐘，躍升你的職涯",
+  tagline: "每天 15 分鐘，躍升你的職涯",
   favicon: "/img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

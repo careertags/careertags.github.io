@@ -1,12 +1,12 @@
 ---
 title: 關於本站
-description: CareerTags 職涯書籤：LEAP，每天 15 分鐘，躍升你的職涯。透過學習、實踐、反思與證明，把溝通、協作、思考與領導變成可累積的職涯成果。
+description: CareerTags 職涯書籤：每天 15 分鐘，躍升你的職涯。透過學習、實踐、反思與證明，把溝通、協作、思考與領導變成可累積的職涯成果。
 image: https://www.careertags.net/img/logo.png
 ---
 
 # CareerTags 職涯書籤
 
-**LEAP：每天 15 分鐘，躍升你的職涯。**
+**每天 15 分鐘，躍升你的職涯。**
 
 軟實力不是看會的，是練出來的。
 
