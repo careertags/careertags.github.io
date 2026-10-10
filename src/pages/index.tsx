@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 import clsx from "clsx";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
@@ -10,11 +9,11 @@ import styles from "./index.module.css";
 
 function StatsBar(): ReactNode {
   const stats = [
-    { value: "10 分鐘", label: "每天一則精選影片或 Podcast" },
-    { value: "9 種", label: "職涯目標，從求職到在職成長" },
-    { value: "11 個", label: "目標職位的技能藍圖" },
-    { value: "4 大", label: "求職平台一鍵收藏職缺" },
-    { value: "安全", label: "資料存在本機，支援匯出匯入" },
+    { value: "15 分鐘", label: "每日學習時間" },
+    { value: "9 種", label: "職涯情境" },
+    { value: "11 個", label: "目標職位技能模型" },
+    { value: "4 個", label: "支援的求職平台" },
+    { value: "本機", label: "資料儲存，免註冊登入" },
   ];
   return (
     <div className="ct-stats-bar">
@@ -28,6 +27,41 @@ function StatsBar(): ReactNode {
   );
 }
 
+const CHROME_URL =
+  "https://chromewebstore.google.com/detail/careertags/hgbdlhjfbbklmcibbnecaoijkhmaeeop?hl=zh-tw";
+// null until the app is live; its badge is then dimmed, with a note below.
+const APP_STORE_URL: string | null = null;
+const GOOGLE_PLAY_URL: string | null = null;
+
+function StoreBadge({
+  href,
+  src,
+  alt,
+}: {
+  href: string | null;
+  src: string;
+  alt: string;
+}) {
+  const img = <img src={src} alt={alt} className={styles.storeBadge} />;
+  if (href) {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.storeBadgeLink}
+      >
+        {img}
+      </a>
+    );
+  }
+  return (
+    <span className={clsx(styles.storeBadgeLink, styles.storeBadgeSoon)}>
+      {img}
+    </span>
+  );
+}
+
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -37,19 +71,40 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--success button--lg"
-            to="https://chromewebstore.google.com/detail/careertags/hgbdlhjfbbklmcibbnecaoijkhmaeeop?hl=zh-tw"
+        <div className={styles.ctaGroup}>
+          <a
+            href={CHROME_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.chromeCta}
           >
-            免費下載
-          </Link>
-          <Link
-            className="margin-left--sm button button--secondary button--lg"
-            to="/resources"
-          >
-            開始學習
-          </Link>
+            <img
+              src="/img/chrome-store.svg"
+              alt=""
+              className={styles.chromeCtaIcon}
+            />
+            <span className={styles.chromeCtaText}>
+              <span className={styles.chromeCtaLine1}>免費安裝</span>
+              <span className={styles.chromeCtaLine2}>
+                Chrome 線上應用程式商店
+              </span>
+            </span>
+          </a>
+          <div className={styles.storeBadges}>
+            <StoreBadge
+              href={APP_STORE_URL}
+              src="/img/app-store.png"
+              alt="Download on the App Store"
+            />
+            <StoreBadge
+              href={GOOGLE_PLAY_URL}
+              src="/img/google-play.png"
+              alt="Get it on Google Play"
+            />
+          </div>
+          {(!APP_STORE_URL || !GOOGLE_PLAY_URL) && (
+            <p className={styles.storeNote}>iOS 與 Android App 即將上線</p>
+          )}
         </div>
       </div>
     </header>
@@ -61,7 +116,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="每天 10 分鐘，打造你的職場軟實力。設定職涯目標、找出技能缺口、記錄實戰日誌，把練習累積成面試和升遷用得上的職場故事"
+      description="CareerTags 職涯書籤：一站式職涯學習與求職管理工具，從職涯目標看出要補的技能，每天 15 分鐘練習，打造你的職場軟實力。提供 Chrome 擴充功能與 iOS、Android App。"
     >
       <HomepageHeader />
       <StatsBar />

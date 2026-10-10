@@ -1,53 +1,108 @@
 import type { ReactNode } from "react";
 import clsx from "clsx";
 import Heading from "@theme/Heading";
+import Icon, { type IconName } from "@site/src/components/Icon";
 import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
+  icon: IconName;
   description: ReactNode;
 };
 
-// 從設定目標、找出缺口，到練習並累積成可以說的故事。
+// The product's flow, in order: goal, skills, resources, practice, records,
+// stories, then growing on from there. The last step spans the row.
 const FeatureList: FeatureItem[] = [
   {
-    title: "🎯 我的目標",
+    title: "選擇職涯目標",
+    icon: "target",
     description: (
       <>
-        社會新鮮人、正在找工作、在職想轉職、升遷加薪、新手主管、創業副業……選出你現在的狀態，首頁就會推薦對應的主題和下一步
+        從求職、轉職、重返職場、升遷到新任主管等九種情境中選擇目前階段，並可指定目標職位。
       </>
     ),
   },
   {
-    title: "🧭 技能缺口分析",
+    title: "技能分析",
+    icon: "compass",
     description: (
       <>
-        選一個目標職位，或用收藏的職缺，看出這份工作最看重哪些技能、你已經練過哪些、還差哪幾項
+        依目標職位或已收藏的職缺，比對所需技能與既有練習紀錄，找出待加強的項目。
       </>
     ),
   },
   {
-    title: "📝 實戰日誌",
+    title: "推薦學習資源",
+    icon: "book",
     description: (
       <>
-        每天 10 分鐘看完一則精選影片或 Podcast，挑一個行動計劃實際去做，再回來記下情境、結果和調整
+        針對待加強的技能與目前階段，推薦對應主題的精選影片與 Podcast，每則附重點摘要與行動計劃。
       </>
     ),
   },
   {
-    title: "⭐ 職場故事",
+    title: "定期練習",
+    icon: "repeat",
     description: (
       <>
-        把一次實戰經驗整理成 STAR 故事（情境、任務、行動、結果），面試、升遷、自評時就有具體例子可說
+        每天 15 分鐘，選定行動計劃並實際執行。每日提醒協助你維持固定的練習節奏。
+      </>
+    ),
+  },
+  {
+    title: "學習紀錄",
+    icon: "chart",
+    description: (
+      <>
+        記錄每次練習的情境、結果與調整方向，累積連續學習天數，掌握自己的成長軌跡。
+      </>
+    ),
+  },
+  {
+    title: "職場故事",
+    icon: "award",
+    description: (
+      <>
+        將練習成果整理為 STAR 架構（情境、任務、行動、結果），在面試、升遷與年度考核時提出具體案例。
+      </>
+    ),
+  },
+  {
+    title: "持續成長",
+    icon: "growth",
+    description: (
+      <>
+        職涯階段改變時，隨時更新目標與目標職位，重新檢視技能缺口，讓學習與練習持續累積，進入下一輪成長。
       </>
     ),
   },
 ];
 
-function Feature({ title, description }: FeatureItem) {
+function Feature({
+  title,
+  icon,
+  description,
+  step,
+  wide,
+}: FeatureItem & { step: number; wide?: boolean }) {
   return (
-    <div className={clsx("col col--3")}>
-      <div className={styles.glassCard}>
+    <div
+      className={clsx(
+        "col",
+        wide ? "col--12" : "col--4",
+        styles.featureCol,
+        wide && styles.featureColWide,
+      )}
+    >
+      <div className={clsx(styles.glassCard, wide && styles.glassCardWide)}>
+        <div className={styles.cardHead}>
+          <div className={styles.iconWrap}>
+            <Icon name={icon} size={26} className={styles.featureIcon} />
+          </div>
+          <span className={styles.stepNo}>
+            {String(step).padStart(2, "0")}
+          </span>
+        </div>
         <h3 className={styles.cardTitle}>{title}</h3>
         <p className={styles.cardDesc}>{description}</p>
       </div>
@@ -58,42 +113,45 @@ function Feature({ title, description }: FeatureItem) {
 function ProductShowcase(): ReactNode {
   const features = [
     {
-      image: "/img/cover-1.jpg",
-      title: "✅ 一鍵收藏跨平台職缺",
+      image: "/img/cover-4.jpg",
+      title: "12 大主題精選內容",
       description:
-        "在 104、Yourator、Cake、LinkedIn 瀏覽職缺時，直接點擊瀏覽器擴充功能即可自動擷取職位、公司、薪資等資訊並儲存",
-    },
-    {
-      image: "/img/cover-2.jpg",
-      title: "📋 視覺化看板，系統化管理你的求職進度",
-      description:
-        "以看板或列表模式管理所有職缺，拖曳更新應徵狀態：已收藏 → 已投遞 → 已讀取 → 面試中 → 收到 Offer / 無聲卡",
+        "涵蓋溝通與協作、職涯發展、領導與管理、思考與決策、AI 與數位素養、身心健康、投資與理財等主題。精選影片與 Podcast，每則皆附重點摘要與行動計劃。",
     },
     {
       image: "/img/cover-3.jpg",
-      title: "📚 一鍵打造你的個人成長學習知識庫",
+      title: "學習紀錄與每日提醒",
       description:
-        "收藏 YouTube 影片、線上課程、書籍、Podcast、文章等，建立集合分類（如「PM 學習」、「面試準備」），追蹤學習進度",
+        "收藏內容、勾選行動計劃、撰寫實戰日誌，搭配連續學習天數與每日提醒，建立穩定的學習習慣。",
     },
     {
-      image: "/img/cover-4.jpg",
-      title: "🔍 探索推薦精選職涯成長學習資源",
+      image: "/img/cover-1.jpg",
+      title: "跨平台職缺收藏",
       description:
-        "內建職涯發展、個人成長、職場軟實力、AI 應用、求職轉職等分類的精選學習資源，幫助你持續進步",
+        "支援 104、Yourator、Cake 與 LinkedIn。瀏覽職缺時點擊擴充功能，即可自動擷取職位、公司與薪資資訊。",
+    },
+    {
+      image: "/img/cover-2.jpg",
+      title: "職缺看板",
+      description:
+        "以看板或列表管理應徵進度，從收藏、投遞、面試到錄取一目了然。每個職缺皆可檢視所需技能、待加強項目與相關的職場故事。",
     },
     {
       image: "/img/cover-5.jpg",
-      title: "📤 支援本地端資料匯入匯出安全又放心",
-      description: "支援 CSV 匯出備份職缺，輕鬆轉移和分享資料",
+      title: "資料儲存於本機",
+      description:
+        "無需註冊或登入，所有資料皆儲存在你的裝置上。職缺紀錄支援 CSV 匯出與匯入。",
     },
   ];
+
+
 
   return (
     <section className={styles.showcase}>
       <div className="container">
         <div className={styles.sectionLabel}>
           <span className="ct-section-badge">功能特色</span>
-          <Heading as="h2">一個工具，搞定職涯成長</Heading>
+          <Heading as="h2">學習與求職，在同一個地方管理</Heading>
         </div>
         {features.map((feature, idx) => (
           <div
@@ -127,16 +185,21 @@ export default function HomepageFeatures(): ReactNode {
       <section className={styles.features}>
         <div className="container">
           <div className={styles.featuresPreamble}>
-            <span className="ct-section-badge">全新功能</span>
-            <Heading as="h2">從設定目標，到有故事可說</Heading>
+            <span className="ct-section-badge">核心功能</span>
+            <Heading as="h2">從目標到成果的職涯準備流程</Heading>
             <p className={styles.featuresLead}>
-              選好你的職涯目標，CareerTags
-              幫你找出技能缺口、每天練一點，再把練習累積成面試和升遷時用得上的職場故事
+              選擇職涯目標後，CareerTags
+              會分析技能缺口並推薦對應的學習資源，透過定期練習與學習紀錄累積實戰經驗，整理成可以在面試與考核中引用的職場故事，並隨著職涯發展持續成長。
             </p>
           </div>
           <div className="row">
             {FeatureList.map((props, idx) => (
-              <Feature key={idx} {...props} />
+              <Feature
+                key={idx}
+                step={idx + 1}
+                wide={idx === FeatureList.length - 1}
+                {...props}
+              />
             ))}
           </div>
         </div>

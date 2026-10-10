@@ -18,7 +18,7 @@
 }
 
 .featuresLead {
-  max-width: 640px;
+  max-width: 720px;
   margin: 1rem auto 0;
   font-size: 1rem;
   line-height: 1.8;
@@ -50,8 +50,8 @@
 
 /* ── Icon Wrap ── */
 .iconWrap {
-  width: 64px;
-  height: 64px;
+  width: 52px;
+  height: 52px;
   background: rgba(0, 188, 212, 0.08);
   border-radius: 14px;
   display: flex;
@@ -61,10 +61,27 @@
   border: 1px solid rgba(0, 188, 212, 0.18);
 }
 
-.featurePng {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
+.cardHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.cardHead .iconWrap {
+  margin-bottom: 0;
+}
+
+.stepNo {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: rgba(0, 188, 212, 0.55);
+  font-variant-numeric: tabular-nums;
+}
+
+.featureIcon {
+  color: #00bcd4;
 }
 
 .cardTitle {
@@ -169,16 +186,50 @@
   }
 }
 
+.featureCol {
+  margin-bottom: 1.5rem;
+}
+
+/* The closing step: icon and number on the left, text on the right. */
+.glassCardWide {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1.5rem;
+  align-items: center;
+}
+
+.glassCardWide .cardHead {
+  grid-row: span 2;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0;
+}
+
+.glassCardWide .cardTitle {
+  margin-bottom: 0.35rem;
+}
+
 @media screen and (max-width: 996px) {
-  .features :global(.col--3) {
+  .featureCol:not(.featureColWide) {
     --ifm-col-width: 50%;
-    margin-bottom: 1.25rem;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .features :global(.col--3) {
+  .featureCol:not(.featureColWide) {
     --ifm-col-width: 100%;
+  }
+
+  .glassCardWide {
+    display: block;
+  }
+
+  .glassCardWide .cardHead {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
   }
 }
 

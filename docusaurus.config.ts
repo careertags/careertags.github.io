@@ -7,7 +7,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "CareerTags 職涯書籤",
   tagline:
-    "每天 10 分鐘，打造你的職場軟實力。精選職涯發展與個人成長的影片和 Podcast，附重點精華與行動計劃",
+    "一站式職涯學習與求職管理工具，從職涯目標看出要補的技能，每天 15 分鐘練習，打造你的職場軟實力",
   favicon: "/img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -130,7 +130,7 @@ const config: Config = {
         // },
         {
           href: "https://facebook.com/groups/careertags",
-          label: "職涯與個人成長社群",
+          label: "職涯發展與個人成長社群",
           position: "left",
         },
       ],
