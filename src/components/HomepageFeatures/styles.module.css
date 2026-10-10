@@ -175,10 +175,75 @@
   color: #8a9aab;
 }
 
+/* A line breaks after a comma or 、, never inside a phrase. */
+.phrase {
+  display: inline-block;
+}
+
+/* ── Topics ── */
+.topics {
+  padding: 5rem 0 4rem;
+  background: #111118;
+}
+
+.topicGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Each topic in its own colour, as in the app. */
+.topicCard {
+  margin: 0;
+  padding: 1.25rem 1.25rem 1.35rem;
+  border-radius: 14px;
+  background: rgba(20, 20, 36, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 3px solid var(--topic-accent);
+}
+
+.topicNo {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--topic-accent);
+}
+
+.topicTitle {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #e8f4f8;
+}
+
+.topicSubtitle {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: #8a9aab;
+}
+
+@media screen and (max-width: 996px) {
+  .topicGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topicGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 /* ── Showcase Section ── */
 .showcase {
   padding: 5rem 0 4rem;
-  background: #111118;
+  background: #0a0a0f;
 }
 
 .sectionLabel {
@@ -318,7 +383,8 @@
   }
 
   .showcase,
-  .method {
+  .method,
+  .topics {
     padding: 3.5rem 0 2.5rem;
   }
 }

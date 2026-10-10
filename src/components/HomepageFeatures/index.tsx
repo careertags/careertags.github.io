@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import clsx from "clsx";
 import Heading from "@theme/Heading";
 import Icon, { type IconName } from "@site/src/components/Icon";
@@ -226,13 +226,69 @@ function Method(): ReactNode {
   );
 }
 
+// The twelve topics of the resource library, as the data API names them.
+const TopicList: { title: string; subtitle: string; accent: string }[] = [
+  { title: "溝通與協作", subtitle: "清楚表達、說服他人，跨部門把事做成", accent: "#4F7CFF" },
+  { title: "職涯發展", subtitle: "找到方向、累積職涯資本，走得長遠", accent: "#00A88F" },
+  { title: "領導與管理", subtitle: "帶人授權、給予回饋，打造團隊文化", accent: "#F2C94C" },
+  { title: "思考與決策", subtitle: "拆解問題、批判思考，做出好的判斷", accent: "#D6457A" },
+  { title: "生產力與習慣", subtitle: "管好時間與專注，養成習慣、推進專案", accent: "#8BC34A" },
+  { title: "心態與成長", subtitle: "培養韌性與主動性，認識自己與價值觀", accent: "#F2994A" },
+  { title: "求職與轉職", subtitle: "寫好履歷、面試談薪，順利轉換跑道", accent: "#9B51E0" },
+  { title: "商業與產品", subtitle: "商業與產品思維、行銷，起步創業副業", accent: "#EB5757" },
+  { title: "AI 與數位素養", subtitle: "提示技巧、AI Agent 協作與資料分析", accent: "#2D9CDB" },
+  { title: "身心健康", subtitle: "紓解壓力、預防倦怠，顧好睡眠與體能", accent: "#00ACC1" },
+  { title: "人際關係", subtitle: "經營家人、伴侶與友誼，建立真實連結", accent: "#FF8A80" },
+  { title: "投資與理財", subtitle: "記帳預算、儲蓄投資，把收入變成資產", accent: "#219653" },
+];
+
+function Topics(): ReactNode {
+  return (
+    <section className={styles.topics}>
+      <div className="container">
+        <div className={styles.featuresPreamble}>
+          <span className="ct-section-badge">學習主題</span>
+          <Heading as="h2">12 大主題，涵蓋職場與生活</Heading>
+          <p className={styles.featuresLead}>
+            <span className={styles.phrase}>
+              精選 TED、Harvard Business Review、Y Combinator 等英文經典影片與 Podcast，
+            </span>
+            <span className={styles.phrase}>每則附中文重點摘要、精華與行動計劃。</span>
+          </p>
+        </div>
+        <ol className={styles.topicGrid}>
+          {TopicList.map((topic, idx) => (
+            <li
+              key={topic.title}
+              className={styles.topicCard}
+              style={{ "--topic-accent": topic.accent } as CSSProperties}
+            >
+              <span className={styles.topicNo}>
+                {String(idx + 1).padStart(2, "0")}
+              </span>
+              <h3 className={styles.topicTitle}>{topic.title}</h3>
+              <p className={styles.topicSubtitle}>
+                {topic.subtitle.split(/(?<=[，、])/).map((part) => (
+                  <span key={part} className={styles.phrase}>
+                    {part}
+                  </span>
+                ))}
+              </p>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  );
+}
+
 function ProductShowcase(): ReactNode {
   const features = [
     {
       image: "/img/cover-4.jpg",
       title: "12 大主題精選內容",
       description:
-        "涵蓋溝通與協作、職涯發展、領導與管理、思考與決策、AI 與數位素養、身心健康、投資與理財等主題。精選影片與 Podcast，每則皆附重點摘要與行動計劃。",
+        "依主題瀏覽精選影片與 Podcast，先讀重點摘要與精華，再挑一個行動計劃開始練習。完成的行動會記錄在學習紀錄中。",
     },
     {
       image: "/img/cover-3.jpg",
@@ -321,6 +377,7 @@ export default function HomepageFeatures(): ReactNode {
           </div>
         </div>
       </section>
+      <Topics />
       <ProductShowcase />
     </>
   );
