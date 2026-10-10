@@ -74,7 +74,7 @@ function HomepageHeader() {
         <p className={styles.heroLead}>
           <span>從學習、實踐、反思到證明，</span>
           <span>將軟實力轉化為日常行動，</span>
-          <span>讓每一次實踐都成為職涯成長的累積</span>
+          <span>讓每一次實踐都成為職涯與個人成長的累積</span>
         </p>
         <p className={styles.heroLeap}>Learn. Execute. Assess. Prove.</p>
         <div className={styles.ctaGroup}>
