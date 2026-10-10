@@ -234,13 +234,13 @@ const TopicList: { title: string; subtitle: string; accent: string; count: numbe
   { title: "領導與管理", subtitle: "帶人授權、給予回饋，打造團隊文化", accent: "#F2C94C", count: 10 },
   { title: "思考與決策", subtitle: "拆解問題、批判思考，做出好的判斷", accent: "#D6457A", count: 15 },
   { title: "生產力與習慣", subtitle: "管好時間與專注，養成習慣、推進專案", accent: "#8BC34A", count: 10 },
-  { title: "心態與成長", subtitle: "培養韌性與主動性，認識自己與價值觀", accent: "#F2994A", count: 6 },
+  { title: "心態與成長", subtitle: "培養韌性與主動性，認識自己與價值觀", accent: "#F2994A", count: 9 },
   { title: "求職與轉職", subtitle: "寫好履歷、面試談薪，順利轉換跑道", accent: "#9B51E0", count: 10 },
   { title: "商業與產品", subtitle: "商業與產品思維、行銷，起步創業副業", accent: "#EB5757", count: 12 },
   { title: "AI 與數位素養", subtitle: "提示技巧、AI Agent 協作與資料分析", accent: "#2D9CDB", count: 9 },
-  { title: "身心健康", subtitle: "紓解壓力、預防倦怠，顧好睡眠與體能", accent: "#00ACC1", count: 6 },
-  { title: "人際關係", subtitle: "經營家人、伴侶與友誼，建立真實連結", accent: "#FF8A80", count: 5 },
-  { title: "投資與理財", subtitle: "記帳預算、儲蓄投資，把收入變成資產", accent: "#219653", count: 5 },
+  { title: "身心健康", subtitle: "紓解壓力、預防倦怠，顧好睡眠與體能", accent: "#00ACC1", count: 9 },
+  { title: "人際關係", subtitle: "經營家人、伴侶與友誼，建立真實連結", accent: "#FF8A80", count: 8 },
+  { title: "投資與理財", subtitle: "記帳預算、儲蓄投資，把收入變成資產", accent: "#219653", count: 8 },
 ];
 
 function Topics(): ReactNode {
@@ -255,7 +255,7 @@ function Topics(): ReactNode {
               精選 TED、Harvard Business Review、Y Combinator 等英文經典影片與 Podcast，
             </span>
             <span className={styles.phrase}>
-              目前收錄 100 多則、涵蓋 31 項職場技能，
+              目前收錄 120 多則、涵蓋 31 項職場技能，
             </span>
             <span className={styles.phrase}>每則附中文重點摘要、精華與行動計劃。</span>
           </p>
