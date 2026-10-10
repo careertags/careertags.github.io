@@ -63,6 +63,29 @@
   margin: 0 auto 0.5rem;
 }
 
+/* The slogan's case, under it: narrower than the hero, quieter. */
+.heroLead {
+  max-width: 640px;
+  margin: 0.75rem auto 0;
+  font-size: 0.98rem;
+  line-height: 1.85;
+  color: #8a9aab;
+}
+
+.heroBanner :global(.hero__subtitle) {
+  font-size: clamp(1.25rem, 3vw, 1.6rem);
+  font-weight: 700;
+  color: #e8f4f8;
+}
+
+.heroLeap {
+  margin: 0.9rem auto 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #00bcd4;
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 4.5rem 1.5rem 3.5rem;

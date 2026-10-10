@@ -110,6 +110,122 @@ function Feature({
   );
 }
 
+// LEAP, the method behind the flow: what each part of the product is for.
+const MethodList: (FeatureItem & { en: string })[] = [
+  {
+    title: "學習",
+    en: "Learn",
+    icon: "book",
+    description: (
+      <>
+        透過精選影片與 Podcast 的重點摘要，理解一項職場能力與它的應用方法。
+      </>
+    ),
+  },
+  {
+    title: "實踐",
+    en: "Execute",
+    icon: "repeat",
+    description: (
+      <>
+        把所學轉化為工作中的具體行動，每天完成一個小練習，例如在會議中先釐清需求，或練習給出建設性回饋。
+      </>
+    ),
+  },
+  {
+    title: "反思",
+    en: "Assess",
+    icon: "chart",
+    description: (
+      <>
+        回顧行動的結果、辨識盲點，在實戰日誌記下情境與下次調整方向，找出可以做得更好的地方。
+      </>
+    ),
+  },
+  {
+    title: "證明",
+    en: "Prove",
+    icon: "award",
+    description: (
+      <>
+        把真實的工作經驗整理成 STAR 故事，累積面試、升遷與績效考核時能具體呈現的能力證據。
+      </>
+    ),
+  },
+];
+
+const CompareRows: [string, string][] = [
+  ["看完一堂課", "學完後採取一個行動"],
+  ["收藏一支影片", "把知識用在真實情境"],
+  ["記住一個方法", "實踐並反思方法的效果"],
+  ["完成學習時數", "累積實戰案例與成果"],
+  ["背好面試答案", "從真實經驗整理 STAR 故事"],
+];
+
+function Method(): ReactNode {
+  return (
+    <section className={styles.method}>
+      <div className="container">
+        <div className={styles.featuresPreamble}>
+          <span className="ct-section-badge">核心方法</span>
+          <Heading as="h2">LEAP 職涯躍升法</Heading>
+          <p className={styles.featuresLead}>
+            軟實力不是看會的，是練出來的。LEAP 是「躍升」的意思：每天 15 分鐘是開始行動的門檻，真正的成長，來自持續實踐、誠實反思，以及一次次累積下來的成果
+          </p>
+        </div>
+        <div className="row">
+          {MethodList.map(({ en, ...props }, idx) => (
+            <div
+              key={idx}
+              className={clsx("col", "col--3", styles.featureCol, styles.methodCol)}
+            >
+              <div className={styles.glassCard}>
+                <div className={styles.cardHead}>
+                  <div className={styles.iconWrap}>
+                    <Icon name={props.icon} size={26} className={styles.featureIcon} />
+                  </div>
+                  <span className={styles.stepNo}>
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <h3 className={styles.cardTitle}>
+                  {props.title} <span className={styles.methodEn}>{en}</span>
+                </h3>
+                <p className={styles.cardDesc}>{props.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className={styles.compare}>
+          <Heading as="h3" className={styles.compareTitle}>
+            不只學會，更要做得到、說得出
+          </Heading>
+          <table className={styles.compareTable}>
+            <thead>
+              <tr>
+                <th>一般學習平台</th>
+                <th>CareerTags</th>
+              </tr>
+            </thead>
+            <tbody>
+              {CompareRows.map(([usual, ours]) => (
+                <tr key={usual}>
+                  <td>{usual}</td>
+                  <td>{ours}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p className={styles.compareNote}>
+            CareerTags 不取代線上課程、Podcast 或閱讀，而是連接「學到的知識」與「實際做出的改變」。
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function ProductShowcase(): ReactNode {
   const features = [
     {
@@ -182,10 +298,11 @@ function ProductShowcase(): ReactNode {
 export default function HomepageFeatures(): ReactNode {
   return (
     <>
+      <Method />
       <section className={styles.features}>
         <div className="container">
           <div className={styles.featuresPreamble}>
-            <span className="ct-section-badge">核心功能</span>
+            <span className="ct-section-badge">使用流程</span>
             <Heading as="h2">從目標到成果的職涯準備流程</Heading>
             <p className={styles.featuresLead}>
               選擇職涯目標後，CareerTags

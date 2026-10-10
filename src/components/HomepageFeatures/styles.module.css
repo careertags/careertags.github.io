@@ -100,6 +100,81 @@
   margin: 0;
 }
 
+/* ── Method Section ── */
+.method {
+  padding: 5rem 0 4rem;
+  background: #111118;
+}
+
+.methodEn {
+  margin-left: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba(0, 188, 212, 0.75);
+}
+
+.compare {
+  max-width: 720px;
+  margin: 3rem auto 0;
+  text-align: center;
+}
+
+.compareTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #e8f4f8;
+  margin-bottom: 1.25rem;
+}
+
+.compareTable {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.compareTable th,
+.compareTable td {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-bottom: 1px solid rgba(0, 188, 212, 0.12);
+  background: transparent;
+}
+
+.compareTable thead,
+.compareTable tr {
+  background: transparent;
+  border: none;
+}
+
+.compareTable th {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: #6b7a8d;
+}
+
+.compareTable th:last-child {
+  color: #00bcd4;
+}
+
+.compareTable td:first-child {
+  color: #6b7a8d;
+}
+
+.compareTable td:last-child {
+  color: #e8f4f8;
+  font-weight: 600;
+}
+
+.compareNote {
+  margin: 1.25rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #8a9aab;
+}
+
 /* ── Showcase Section ── */
 .showcase {
   padding: 5rem 0 4rem;
@@ -242,7 +317,8 @@
     padding: 3.5rem 0 2.5rem;
   }
 
-  .showcase {
+  .showcase,
+  .method {
     padding: 3.5rem 0 2.5rem;
   }
 }
