@@ -205,9 +205,20 @@
   border-top: 3px solid var(--topic-accent);
 }
 
+.topicHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.topicCount {
+  font-size: 0.75rem;
+  color: #6b7a8d;
+}
+
 .topicNo {
   display: block;
-  margin-bottom: 0.5rem;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.08em;

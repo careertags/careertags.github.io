@@ -226,20 +226,21 @@ function Method(): ReactNode {
   );
 }
 
-// The twelve topics of the resource library, as the data API names them.
-const TopicList: { title: string; subtitle: string; accent: string }[] = [
-  { title: "溝通與協作", subtitle: "清楚表達、說服他人，跨部門把事做成", accent: "#4F7CFF" },
-  { title: "職涯發展", subtitle: "找到方向、累積職涯資本，走得長遠", accent: "#00A88F" },
-  { title: "領導與管理", subtitle: "帶人授權、給予回饋，打造團隊文化", accent: "#F2C94C" },
-  { title: "思考與決策", subtitle: "拆解問題、批判思考，做出好的判斷", accent: "#D6457A" },
-  { title: "生產力與習慣", subtitle: "管好時間與專注，養成習慣、推進專案", accent: "#8BC34A" },
-  { title: "心態與成長", subtitle: "培養韌性與主動性，認識自己與價值觀", accent: "#F2994A" },
-  { title: "求職與轉職", subtitle: "寫好履歷、面試談薪，順利轉換跑道", accent: "#9B51E0" },
-  { title: "商業與產品", subtitle: "商業與產品思維、行銷，起步創業副業", accent: "#EB5757" },
-  { title: "AI 與數位素養", subtitle: "提示技巧、AI Agent 協作與資料分析", accent: "#2D9CDB" },
-  { title: "身心健康", subtitle: "紓解壓力、預防倦怠，顧好睡眠與體能", accent: "#00ACC1" },
-  { title: "人際關係", subtitle: "經營家人、伴侶與友誼，建立真實連結", accent: "#FF8A80" },
-  { title: "投資與理財", subtitle: "記帳預算、儲蓄投資，把收入變成資產", accent: "#219653" },
+// The twelve topics of the resource library, as the data API names them,
+// with how many videos and podcast episodes each holds (data-api 2.8.0).
+const TopicList: { title: string; subtitle: string; accent: string; count: number }[] = [
+  { title: "溝通與協作", subtitle: "清楚表達、說服他人，跨部門把事做成", accent: "#4F7CFF", count: 15 },
+  { title: "職涯發展", subtitle: "找到方向、累積職涯資本，走得長遠", accent: "#00A88F", count: 9 },
+  { title: "領導與管理", subtitle: "帶人授權、給予回饋，打造團隊文化", accent: "#F2C94C", count: 10 },
+  { title: "思考與決策", subtitle: "拆解問題、批判思考，做出好的判斷", accent: "#D6457A", count: 15 },
+  { title: "生產力與習慣", subtitle: "管好時間與專注，養成習慣、推進專案", accent: "#8BC34A", count: 10 },
+  { title: "心態與成長", subtitle: "培養韌性與主動性，認識自己與價值觀", accent: "#F2994A", count: 6 },
+  { title: "求職與轉職", subtitle: "寫好履歷、面試談薪，順利轉換跑道", accent: "#9B51E0", count: 10 },
+  { title: "商業與產品", subtitle: "商業與產品思維、行銷，起步創業副業", accent: "#EB5757", count: 12 },
+  { title: "AI 與數位素養", subtitle: "提示技巧、AI Agent 協作與資料分析", accent: "#2D9CDB", count: 9 },
+  { title: "身心健康", subtitle: "紓解壓力、預防倦怠，顧好睡眠與體能", accent: "#00ACC1", count: 6 },
+  { title: "人際關係", subtitle: "經營家人、伴侶與友誼，建立真實連結", accent: "#FF8A80", count: 5 },
+  { title: "投資與理財", subtitle: "記帳預算、儲蓄投資，把收入變成資產", accent: "#219653", count: 5 },
 ];
 
 function Topics(): ReactNode {
@@ -253,6 +254,9 @@ function Topics(): ReactNode {
             <span className={styles.phrase}>
               精選 TED、Harvard Business Review、Y Combinator 等英文經典影片與 Podcast，
             </span>
+            <span className={styles.phrase}>
+              目前收錄 100 多則、涵蓋 31 項職場技能，
+            </span>
             <span className={styles.phrase}>每則附中文重點摘要、精華與行動計劃。</span>
           </p>
         </div>
@@ -263,9 +267,12 @@ function Topics(): ReactNode {
               className={styles.topicCard}
               style={{ "--topic-accent": topic.accent } as CSSProperties}
             >
-              <span className={styles.topicNo}>
-                {String(idx + 1).padStart(2, "0")}
-              </span>
+              <div className={styles.topicHead}>
+                <span className={styles.topicNo}>
+                  {String(idx + 1).padStart(2, "0")}
+                </span>
+                <span className={styles.topicCount}>{topic.count} 則</span>
+              </div>
               <h3 className={styles.topicTitle}>{topic.title}</h3>
               <p className={styles.topicSubtitle}>
                 {topic.subtitle.split(/(?<=[，、])/).map((part) => (
