@@ -218,7 +218,7 @@ function Method(): ReactNode {
             </tbody>
           </table>
           <p className={styles.compareNote}>
-            CareerTags 不取代線上課程、Podcast 或閱讀，而是連接「學到的知識」與「實際做出的改變」。
+            CareerTags 不取代線上課程、影片、Podcast 或閱讀，而是連接「學到的知識」與「實際做出的改變」。
           </p>
         </div>
       </div>
