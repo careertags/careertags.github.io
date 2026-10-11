@@ -28,6 +28,27 @@ const config: Config = {
 
   onBrokenLinks: "throw",
 
+  stylesheets: [
+    {
+      href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap",
+      type: "text/css",
+    },
+  ],
+  headTags: [
+    {
+      tagName: "link",
+      attributes: { rel: "preconnect", href: "https://fonts.googleapis.com" },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossorigin: "anonymous",
+      },
+    },
+  ],
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -53,6 +74,9 @@ const config: Config = {
         blog: {
           showReadingTime: true,
           blogSidebarCount: "ALL",
+          blogSidebarTitle: "全部文章",
+          blogTitle: "文章",
+          blogDescription: "職場能力相關的演講與訪談重點整理，以及可以在工作中練習的行動計劃。",
           postsPerPage: 10,
           feedOptions: {
             type: ["rss", "atom"],
@@ -113,24 +137,24 @@ const config: Config = {
         src: "img/logo.png",
       },
       items: [
-        { to: "/blog", label: "最新文章", position: "left" },
+        { to: "/about", label: "關於我們", position: "left" },
+        { to: "/blog", label: "文章", position: "left" },
         {
           type: "docSidebar",
           sidebarId: "resourceSidebar",
           position: "left",
           label: "學習資源",
         },
-        { to: "/about", label: "關於我們", position: "left" },
-        // {
-        //   type: "docSidebar",
-        //   sidebarId: "tutorialSidebar",
-        //   position: "left",
-        //   label: "職涯技能樹",
-        // },
         {
           href: "https://facebook.com/groups/careertags",
-          label: "職涯發展與個人成長社群",
-          position: "left",
+          label: "社群",
+          position: "right",
+        },
+        {
+          href: "https://chromewebstore.google.com/detail/careertags/hgbdlhjfbbklmcibbnecaoijkhmaeeop?hl=zh-tw",
+          label: "安裝擴充功能",
+          position: "right",
+          className: "ct-navbar-cta",
         },
       ],
     },
@@ -138,46 +162,45 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "產品",
           items: [
+            { label: "關於我們", to: "/about" },
             {
-              label: "學習資源",
-              to: "/resources",
-            },
-            {
-              label: "最新文章",
-              to: "/blog",
+              label: "Chrome 擴充功能",
+              href: "https://chromewebstore.google.com/detail/careertags/hgbdlhjfbbklmcibbnecaoijkhmaeeop?hl=zh-tw",
             },
           ],
         },
         {
-          title: "Community",
+          title: "內容",
+          items: [
+            { label: "文章", to: "/blog" },
+            { label: "學習資源", to: "/resources" },
+          ],
+        },
+        {
+          title: "社群",
           items: [
             {
-              label: "Facebook Group",
+              label: "Facebook 社團",
               href: "https://facebook.com/groups/careertags",
             },
             {
-              label: "Follow us on Facebook",
+              label: "Facebook 粉絲專頁",
               href: "https://www.facebook.com/careertags",
             },
             {
-              label: "Follow us on Instagram",
+              label: "Instagram",
               href: "https://www.instagram.com/careertags",
             },
           ],
         },
         {
-          title: "More",
+          title: "支援",
           items: [
-            {
-              label: "Contact Us",
-              to: "mailto:careertags.com@gmail.com",
-            },
-            {
-              label: "內容來源與下架申請",
-              to: "/content-policy",
-            },
+            { label: "聯絡信箱", href: "mailto:careertags.com@gmail.com" },
+            { label: "隱私權政策", to: "/privacy" },
+            { label: "內容來源與下架申請", to: "/content-policy" },
           ],
         },
       ],
