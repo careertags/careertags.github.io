@@ -1,6 +1,6 @@
 /* ── Hero ── */
 .hero {
-  padding: 6.5rem 0 5.5rem;
+  padding: 4rem 0 5.5rem;
   background: var(--ct-bg);
   overflow: hidden;
 }
