@@ -176,11 +176,11 @@ function Hero() {
 
 function Stats() {
   const stats = [
+    { value: "9", label: "種職涯情境" },
     { value: "12", label: "學習主題" },
     { value: "360", label: "則精選影片與 Podcast" },
     { value: "31", label: "項職場技能" },
     { value: "11", label: "個目標職位技能模型" },
-    { value: "9", label: "種職涯情境" },
   ];
   return (
     <section className={styles.stats}>
