@@ -180,7 +180,7 @@ function Stats() {
     { value: "360", label: "則精選影片與 Podcast" },
     { value: "31", label: "項職場技能" },
     { value: "11", label: "個目標職位技能模型" },
-    { value: "0", label: "註冊步驟，資料存在你的裝置" },
+    { value: "9", label: "種職涯情境" },
   ];
   return (
     <section className={styles.stats}>
