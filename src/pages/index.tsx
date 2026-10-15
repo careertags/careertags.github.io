@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
@@ -33,10 +33,28 @@ function StoreBadge({
   return <span className={styles.storeBadgeSoon}>{img}</span>;
 }
 
+const MOCK_VIDEO_ID = "R1vskiVDwl4";
+
+/// The next Thursday, as the app writes a planned practice: "10月22日（週四）".
+/// Worked out in the browser, so the example never shows a date gone by.
+function useNextThursday(): string {
+  const [label, setLabel] = useState("週四");
+  useEffect(() => {
+    const d = new Date();
+    d.setDate(d.getDate() + (((4 - d.getDay() + 7) % 7) || 7));
+    setLabel(`${d.getMonth() + 1}月${d.getDate()}日（週四）`);
+  }, []);
+  return label;
+}
+
 // What the app's content page looks like, drawn in HTML: a real item from
 // the catalogue (communication-collaboration, yt-R1vskiVDwl4) with its
 // summary and action plan, the first action practised, the next scheduled.
+// The video plays like it does in the app: the YouTube player loads only
+// once it is tapped.
 function PhoneMock() {
+  const [playing, setPlaying] = useState(false);
+  const thursday = useNextThursday();
   const actions = [
     {
       text: "下次一對一時把手機收起來，至少問三個以「什麼」或「如何」開頭的問題",
@@ -44,7 +62,7 @@ function PhoneMock() {
     },
     {
       text: "下次同事分享困擾時，忍住不講自己類似的故事，改成再多問他一個問題",
-      planned: "10月16日（週四）上午 10:00",
+      planned: `${thursday}上午 10:00`,
     },
     { text: "這週被問到沒把握的事時，直接說「我不知道」，不要用猜的" },
   ];
@@ -56,7 +74,7 @@ function PhoneMock() {
     { icon: "settings", label: "設定" },
   ];
   return (
-    <div className={styles.phone} aria-hidden="true">
+    <div className={styles.phone}>
       <div className={styles.screen}>
         <div className={styles.appBar}>
           <Icon name="chevronLeft" size={18} />
@@ -64,10 +82,30 @@ function PhoneMock() {
           <Icon name="bookmark" size={18} />
         </div>
         <div className={styles.player}>
-          <span className={styles.playButton}>
-            <Icon name="playTriangle" size={20} />
-          </span>
-          <span className={styles.duration}>11:28</span>
+          {playing ? (
+            <iframe
+              className={styles.playerFrame}
+              src={`https://www.youtube-nocookie.com/embed/${MOCK_VIDEO_ID}?autoplay=1&playsinline=1&rel=0`}
+              title="Celeste Headlee: 10 ways to have a better conversation | TED"
+              allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+              allowFullScreen
+            />
+          ) : (
+            <button
+              type="button"
+              className={styles.playerCover}
+              style={{
+                backgroundImage: `url(https://i.ytimg.com/vi/${MOCK_VIDEO_ID}/hqdefault.jpg)`,
+              }}
+              onClick={() => setPlaying(true)}
+              aria-label="播放影片：讓對話更好的 10 個方法"
+            >
+              <span className={styles.playButton}>
+                <Icon name="playTriangle" size={20} />
+              </span>
+              <span className={styles.duration}>11:28</span>
+            </button>
+          )}
         </div>
         <div className={styles.screenBody}>
           <p className={styles.itemTitle}>讓對話更好的 10 個方法</p>
